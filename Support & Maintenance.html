@@ -1,0 +1,2845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Maintenance | Solar Health Checks & Electrical Service - Rosanatech</title>
+    <meta name="description" content="Ensure your power never fails with Rosanatech’s professional maintenance. We offer solar system health checks, battery testing, and electrical troubleshooting across Kenya. Keep your smart system running at 100%.">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables for Colors */
+        :root {
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --primary-dark: #1B5E20;
+            --secondary: #607D8B; /* Slate Grey */
+            --white: #FFFFFF;
+            --charcoal: #37474F;
+            --light-grey: #F5F7FA;
+            --border-color: #E0E0E0;
+             --accent: #FF9800;
+             --warning: #FF9800;
+            --success: #4CAF50;
+            --info: #2196F3;
+        }
+        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+        }
+        
+        .btn i {
+            margin-left: 8px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 120px 0 80px;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            max-width: 900px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.2rem;
+        }
+        
+        /* Maintenance & Support Services Section */
+        .maintenance-services-section {
+            padding: 20px 0;
+            background-color: var(--white);
+        }
+        
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto 50px;
+        }
+        
+        .section-subtitle {
+            display: inline-block;
+            color: var(--primary);
+            background-color: rgba(46, 125, 50, 0.1);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            max-width: 700px;
+            margin: 30px auto 0;
+        }
+        
+        /* Services Tabs */
+        .services-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+        
+        .tab-btn {
+            padding: 12px 24px;
+            background-color: transparent;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            position: relative;
+        }
+        
+        .tab-btn:hover {
+            color: var(--primary);
+            background-color: rgba(46, 125, 50, 0.05);
+        }
+        
+        .tab-btn.active {
+            color: var(--white);
+            background-color: var(--primary);
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+        }
+        
+        .tab-btn.active:after {
+            content: '';
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid var(--primary);
+        }
+        
+        /* Maintenance Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        /* Service Card */
+        .service-card {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--primary);
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-card.featured {
+            border-left-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(255, 152, 0, 0.15);
+        }
+        
+        /* Service Image Gallery */
+        .service-gallery {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .main-service-image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .main-service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .main-service-image img {
+            transform: scale(1.05);
+        }
+        
+        .image-counter {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .location-badge {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background-color: rgba(46, 125, 50, 0.9);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Service Header */
+        .service-header {
+            padding: 25px 25px 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .service-card.featured .service-icon {
+            background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 152, 0, 0.2));
+            color: var(--accent);
+        }
+        
+        .service-title-container {
+            flex: 1;
+        }
+        
+        .service-title {
+            color: var(--charcoal);
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .service-subtitle {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        /* Service Badge */
+        .service-badge {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        
+        .service-card.featured .service-badge {
+            background-color: var(--accent);
+        }
+        
+        /* Service Content */
+        .service-content {
+            padding: 0 25px;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .service-description {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Technical Highlights */
+        .tech-highlights {
+            background-color: rgba(46, 125, 50, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .tech-highlights h4 {
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tech-highlights ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .tech-highlights li {
+            padding: 4px 0;
+            font-size: 0.8rem;
+            color: var(--charcoal);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        
+        .tech-highlights li i {
+            color: var(--primary);
+            font-size: 0.75rem;
+            margin-top: 3px;
+        }
+        
+        /* Applications */
+        .applications {
+            margin-top: 15px;
+        }
+        
+        .applications h4 {
+            color: var(--charcoal);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .application-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .application-tag {
+            background-color: var(--light-grey);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            color: var(--charcoal);
+        }
+        
+        /* Service Footer */
+        .service-footer {
+            padding: 20px 25px;
+            border-top: 1px solid var(--border-color);
+            background-color: rgba(245, 247, 250, 0.5);
+        }
+        
+        .service-cta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .service-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-link:hover {
+            color: var(--primary-dark);
+            gap: 12px;
+        }
+        
+        .service-card.featured .service-link {
+            color: var(--accent);
+        }
+        
+        .service-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.8rem;
+            color: var(--secondary);
+        }
+        
+        .service-indicator i {
+            color: var(--primary-light);
+        }
+        
+        /* Quick Guide */
+        .quick-guide {
+            background-color: var(--light-grey);
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .quick-guide h3 {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+        
+        .guide-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .guide-option {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .guide-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .guide-option h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-description {
+                font-size: 1.05rem;
+            }
+            
+            .services-tabs {
+                gap: 8px;
+            }
+            
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .guide-options {
+                gap: 15px;
+            }
+            
+            .guide-option {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .maintenance-services-section {
+                padding: 60px 0;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-card {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .services-tabs {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 10px;
+            }
+            
+            .tab-btn {
+                white-space: nowrap;
+            }
+            
+            .tab-btn.active:after {
+                display: none;
+            }
+            
+            .quick-guide {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .service-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .service-title-container {
+                width: 100%;
+            }
+            
+            .service-cta {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+            
+            .service-gallery {
+                height: 180px;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .service-card {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+        
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
+        .service-card:nth-child(5) { animation-delay: 0.5s; }
+        .service-card:nth-child(6) { animation-delay: 0.6s; }
+
+        /* Remove navbar and footer styles since they're linked externally */
+        .top-bar, .main-header, .navbar, #rosanatech-footer {
+            display: none; /* These will be loaded from external files */
+        }
+        
+        .main-head {
+            margin-top: 0;
+        }
+
+        /* form intake  Styles */
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Main Form Container */
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            align-items: stretch;
+            min-height: 800px;
+        }
+        
+        /* Left Sidebar - FAQs */
+        .form-sidebar {
+            background-color: var(--light-grey);
+            padding: 40px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            border-right: 1px solid var(--border-color);
+        }
+        
+        .sidebar-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            margin-bottom: 30px;
+        }
+        
+        .faq-section h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background-color: white;
+        }
+        
+        .faq-question {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--charcoal);
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(0, 168, 204, 0.05);
+        }
+        
+        .faq-question i {
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        .faq-answer.active {
+            padding: 15px;
+            max-height: 500px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .faq-answer p {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .faq-answer li {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        
+        /* Form Content */
+        .form-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Progress Indicator */
+        .progress-indicator {
+            margin-bottom: 30px;
+        }
+        
+        .progress-steps {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .progress-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 35px;
+            height: 35px;
+            background-color: var(--border-color);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .progress-step.active .step-number {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .step-label {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .progress-step.active .step-label {
+            color: var(--primary);
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background-color: var(--border-color);
+            border-radius: 2px;
+            margin-top: -2px;
+            position: relative;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            border-radius: 2px;
+            transition: width 0.5s ease;
+            width: 33%;
+        }
+        
+        /* Form Sections */
+        .form-section {
+            animation: fadeIn 0.5s ease;
+            display: none;
+            flex: 1;
+        }
+        
+        .form-section.active {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        /* Form Groups */
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 0.95rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: var(--white);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 168, 204, 0.1);
+        }
+        
+        .form-hint {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        /* Service Selection */
+        .service-checkboxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .service-checkbox {
+            display: block;
+            cursor: pointer;
+        }
+        
+        .service-checkbox input[type="checkbox"] {
+            display: none;
+        }
+        
+        .service-option {
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .service-checkbox input[type="checkbox"]:checked + .service-option {
+            border-color: var(--primary);
+            background-color: rgba(0, 168, 204, 0.05);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 168, 204, 0.1);
+        }
+        
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(0, 168, 204, 0.1), rgba(0, 168, 204, 0.2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .service-text strong {
+            display: block;
+            color: var(--charcoal);
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        
+        .service-text span {
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+        
+        /* Service Type Selection */
+        .service-type-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .service-type-option {
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .service-type-option:hover {
+            border-color: var(--primary-light);
+            transform: translateY(-3px);
+        }
+        
+        .service-type-option.selected {
+            border-color: var(--primary);
+            background-color: rgba(0, 168, 204, 0.05);
+        }
+        
+        .service-type-icon {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .service-type-name {
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 1rem;
+        }
+        
+        /* Emergency Level */
+        .emergency-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .emergency-option {
+            flex: 1;
+            min-width: 120px;
+            padding: 15px;
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .emergency-option:hover {
+            border-color: var(--primary-light);
+        }
+        
+        .emergency-option.selected {
+            background-color: rgba(0, 168, 204, 0.1);
+            border-color: var(--primary);
+        }
+        
+        .emergency-label {
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .emergency-note {
+            font-size: 0.8rem;
+            color: var(--secondary);
+        }
+        
+        /* Review Summary */
+        .review-summary {
+            background-color: rgba(0, 168, 204, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .review-summary h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Checkboxes */
+        .form-checkbox {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .form-checkbox input[type="checkbox"] {
+            margin-top: 3px;
+            accent-color: var(--primary);
+        }
+        
+        /* Preferences */
+        .preference-select {
+            margin-top: 20px;
+        }
+        
+        .preference-select p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .preference-options {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .preference-option {
+            flex: 1;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .preference-option input[type="radio"] {
+            display: none;
+        }
+        
+        .preference-option i {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--secondary);
+        }
+        
+        .preference-option span {
+            font-size: 0.9rem;
+            color: var(--charcoal);
+        }
+        
+        .preference-option input[type="radio"]:checked + i + span {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .preference-option input[type="radio"]:checked ~ * {
+            color: var(--primary);
+        }
+        
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            border: none;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 168, 204, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: var(--light-grey);
+            color: var(--charcoal);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--border-color);
+        }
+        
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        /* Success Modal */
+        .success-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .success-modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            animation: slideUp 0.5s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .form-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-sidebar {
+                display: none; /* Hide FAQ on mobile */
+            }
+            
+            .service-checkboxes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .service-type-options {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .form-content {
+                padding: 25px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .service-checkboxes {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-type-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .emergency-options {
+                flex-direction: column;
+            }
+            
+            .preference-options {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .form-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR WITH INTEGRATED TICKER -->
+    <div class="top-bar" id="topBar">
+        <div class="container flex">
+            <div class="top-bar-left">
+                <i class="fas fa-envelope"></i>
+                <span class="email-text">info@rosanatechsolutions.co.ke</span>
+            </div>
+            
+            <!-- TICKER AREA -->
+            <div class="promo-ticker" id="promoTicker">
+                <div class="ticker-container" id="tickerContainer">
+                    <!-- Ticker content will be inserted by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61569216960441" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/RosanatechX" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@rosanatech_solutions" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBuYBWBFLgU7OT5BZ3z" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/rosanatech-solutions/?viewAsMember=true" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header Container -->
+    <div class="main-head" id="mainHead">
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container flex">
+                <div class="logo-section">
+                    <div class="logo-icon"><img src="assets/logo.png" alt="Rosanatech Logo"></div>
+                    <div class="logo-text">
+                        <div class="company-name">ROSANATECH</div>
+                        <div class="company-tagline">SOLUTIONS LIMITED</div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="phone-label"><i class="fas fa-phone-alt"></i> Free Call</div>
+                    <div class="phone-number">+254 705059964</div>
+                    <div class="phone-subtext">We're Just a Call Away</div>
+                </div>
+                
+                <div class="location-info">
+                    <div class="location-label"><i class="fas fa-map-marker-alt"></i> Our Location</div>
+                    <div class="location-details">Nairobi, Kenya</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <!-- Mobile Logo Button (replaces WhatsApp button) -->
+                <button class="mobile-logo-btn" id="mobileLogoBtn">
+                    <img src="assets/logo.png" alt="Rosanatech Logo">
+                    <span class="mobile-logo-btn-text">ROSANATECH</span>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-bolt"></i> Services</a></li>
+                    <li><a href="projects.html"><i class="fas fa-solar-panel"></i> Projects</a></li>
+                    <li><a href="blog.html"><i class="fas fa-hubspot"></i> Blog</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                
+                <!-- Desktop WhatsApp Button -->
+                <a href="https://wa.me/254705059964?text=Hello%20Rosanatech%20Solutions%20Limited!%20I%20would%20like%20to%20inquire%20about%20your%20electrical%20and%20solar%20services." 
+                   class="nav-whatsapp-btn desktop" 
+                   id="whatsappBtn"
+                   target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+        </nav>
+    </div>
+
+   <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <img src="assets/logo.png" alt="Rosanatech Logo">
+                <div class="mobile-logo-text">ROSANATECH</div>
+            </div>
+            <button class="mobile-close" id="mobileClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-links">
+            <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="services.html"><i class="fas fa-bolt"></i> Services</a></li>
+            <li><a href="projects.html"><i class="fas fa-solar-panel"></i> Projects</a></li>
+            <li><a href="blog.html"><i class="fas fa-hubspot"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        
+        <div class="mobile-contact">
+            <h4><i class="fas fa-headset"></i> Contact Us</h4>
+            <div class="mobile-contact-info">
+                <div><i class="fas fa-envelope"></i> info@rosanatechsolutions.co.ke</div>
+                <div><i class="fas fa-phone"></i> +254 705 059 964</div>
+                <div><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+            </div>
+        </div>
+        
+        <a href="https://wa.me/254705059964?text=Hello%20Rosanatech%20Solutions%20Limited!%20I%20would%20like%20to%20inquire%20about%20your%20electrical%20and%20solar%20services." 
+           class="mobile-cta" 
+           target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp Direct
+        </a>
+        
+        <a href="quote.html" class="mobile-cta inquire">
+            <i class="fas fa-comment-dots"></i> Request Quote
+        </a>
+    </div>
+    <!-- END OF MOBILE MENU -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>24/7 Support & Preventive System Maintenance</h1>
+            <p>Keep your system at peak performance. We provide professional health checks, battery testing, and rapid technical support nationwide.</p>
+            <a href="#inquiry" class="btn">Schedule Maintenance Service <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Maintenance & Support Services Section -->
+    <div class="container">
+        <section class="maintenance-services-section">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Maintenance & Support Services in Kenya</h2>
+                <p class="section-description">Proactive care and expert support for all your electrical, solar, and smart home systems. We prevent problems before they occur and provide rapid response when you need us most.</p>
+            </div>
+            
+            <!-- Services Tabs -->
+            <div class="services-tabs">
+                <button class="tab-btn active" onclick="filterServices('all')">All Services</button>
+                <button class="tab-btn" onclick="filterServices('preventive')">Preventive Care</button>
+                <button class="tab-btn" onclick="filterServices('corrective')">Corrective Support</button>
+                <button class="tab-btn" onclick="filterServices('audits')">Health Audits</button>
+                <button class="tab-btn" onclick="filterServices('plans')">Subscription Plans</button>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Preventive Maintenance -->
+                <div class="service-card featured" data-category="preventive plans">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Preventive maintenance inspection" id="preventive-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 3 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Nairobi Service Area
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Proactive System Care</h3>
+                            <div class="service-subtitle">Preventive Maintenance (Subscription Plans)</div>
+                            <span class="service-badge">Most Popular</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Stop electrical and solar failures before they happen. Our scheduled inspections ensure your systems operate at peak efficiency, saving you from costly emergency repairs.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Scheduled Audits: Quarterly or Bi-annual safety and performance checks</li>
+                                <li><i class="fas fa-check"></i> Solar Panel Cleaning: Professional debris removal to maintain 100% output</li>
+                                <li><i class="fas fa-check"></i> Thermal Imaging: Infrared scanning of DB boards to detect "hot spots" before they burn</li>
+                                <li><i class="fas fa-check"></i> Firmware Updates: Keeping your Smart Home hubs and Solar Inverters up to date</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-home"></i> Ideal For</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Solar System Owners</span>
+                                <span class="application-tag">Smart Home Users</span>
+                                <span class="application-tag">Business Premises</span>
+                                <span class="application-tag">Long-Term Protection</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Preventive Maintenance Plans">
+                                <i class="fas fa-arrow-right"></i> View Subscription Plans
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> Scheduled quarterly/bi-annual
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Corrective & Emergency Support -->
+                <div class="service-card" data-category="corrective">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Emergency electrical repair service" id="emergency-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 3 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> 24/7 Service Coverage
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Rapid Response Recovery</h3>
+                            <div class="service-subtitle">Corrective & Emergency Support</div>
+                            <span class="service-badge">24/7 Response</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">When power fails or systems glitch, our EPRA-certified technicians are on standby to restore your home or business to full functionality with minimal downtime.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Fault Diagnostics: Advanced troubleshooting for complex electrical issues</li>
+                                <li><i class="fas fa-check"></i> Equipment Repair: Fast replacement of faulty breakers, sensors, or inverters</li>
+                                <li><i class="fas fa-check"></i> Priority Dispatch: Guaranteed response times for our Gold members</li>
+                                <li><i class="fas fa-check"></i> Post-Repair Certification: Ensuring the system meets safety codes after every fix</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Emergency Scenarios</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Power Outages</span>
+                                <span class="application-tag">System Failures</span>
+                                <span class="application-tag">Equipment Malfunction</span>
+                                <span class="application-tag">Safety Concerns</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Corrective & Emergency Support">
+                                <i class="fas fa-arrow-right"></i> Book Emergency Repair
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 2-4 hour response time
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Energy Health Audits -->
+                <div class="service-card" data-category="audits">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Professional energy audit in progress" id="audit-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 3 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Professional Service
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Performance Optimization</h3>
+                            <div class="service-subtitle">Energy Health Audits</div>
+                            <span class="service-badge">Data-Driven</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Is your system underperforming? We provide deep-dive technical audits to identify energy leaks, optimize load balancing, and extend the life of your batteries.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Power Quality Analysis: Checking for voltage fluctuations and harmonics</li>
+                                <li><i class="fas fa-check"></i> Battery Health Testing: Capacity and cycle-life reporting for solar storage</li>
+                                <li><i class="fas fa-check"></i> Efficiency Mapping: Data-driven advice to lower your monthly KPLC bills</li>
+                                <li><i class="fas fa-check"></i> Compliance Certification: Renewal of Electrical Compliance Certificates (COC)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-clipboard-check"></i> Audit Benefits</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Performance Issues</span>
+                                <span class="application-tag">High Energy Bills</span>
+                                <span class="application-tag">System Upgrades</span>
+                                <span class="application-tag">Regulatory Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Energy Health Audits">
+                                <i class="fas fa-arrow-right"></i> Request an Audit
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 3-4 hour comprehensive audit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Solar System Maintenance -->
+                <div class="service-card" data-category="preventive">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Solar panel cleaning and maintenance" id="solar-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 2 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Nationwide Service
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Solar System Maintenance</h3>
+                            <div class="service-subtitle">Panel & Inverter Care</div>
+                            <span class="service-badge">Maximize Efficiency</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Specialized maintenance services to keep your solar panels clean, inverters optimized, and battery systems performing at their absolute best throughout their lifespan.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Service Includes</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Panel Degradation Testing: Performance analysis and output optimization</li>
+                                <li><i class="fas fa-check"></i> Inverter Health Checks: Firmware updates and efficiency monitoring</li>
+                                <li><i class="fas fa-check"></i> Battery Maintenance: Equalization charging and capacity testing</li>
+                                <li><i class="fas fa-check"></i> Mounting Inspection: Structural integrity and security checks</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-sun"></i> Applications</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Residential Solar</span>
+                                <span class="application-tag">Commercial Solar</span>
+                                <span class="application-tag">Off-Grid Systems</span>
+                                <span class="application-tag">Solar Farms</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Solar System Maintenance">
+                                <i class="fas fa-arrow-right"></i> Maintain My Solar
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> Seasonal maintenance
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smart Home Support -->
+                <div class="service-card" data-category="corrective">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Smart home system troubleshooting" id="smart-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 2 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Tech Support
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Smart Home Support</h3>
+                            <div class="service-subtitle">Automation System Care</div>
+                            <span class="service-badge">Remote Support</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Professional support for your smart home ecosystem, from troubleshooting connectivity issues to programming new automations and ensuring all devices work harmoniously.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Support Services</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Network Optimization: Wi-Fi coverage analysis and mesh network setup</li>
+                                <li><i class="fas fa-check"></i> Device Troubleshooting: Connectivity and functionality issue resolution</li>
+                                <li><i class="fas fa-check"></i> Automation Programming: Custom scene creation and schedule optimization</li>
+                                <li><i class="fas fa-check"></i> Security Updates: Regular patching and security configuration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-home"></i> Applications</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Smart Lighting</span>
+                                <span class="application-tag">Security Systems</span>
+                                <span class="application-tag">Climate Control</span>
+                                <span class="application-tag">Entertainment Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Smart Home Support">
+                                <i class="fas fa-arrow-right"></i> Get Smart Support
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> Remote/on-site options
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Annual Maintenance Contracts -->
+                <div class="service-card" data-category="plans">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1560035285-64848d5d7f3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Annual maintenance contract signing" id="contract-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 1 photo
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Contract Service
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Annual Maintenance Contracts</h3>
+                            <div class="service-subtitle">Comprehensive Care Packages</div>
+                            <span class="service-badge">Cost-Effective</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Peace of mind through comprehensive annual maintenance contracts. Fixed pricing, scheduled visits, and priority support for all your electrical, solar, and smart home systems.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Contract Benefits</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Fixed Annual Cost: Predictable maintenance budgeting</li>
+                                <li><i class="fas fa-check"></i> Priority Service: Jump to front of the queue for emergency calls</li>
+                                <li><i class="fas fa-check"></i> Discounted Rates: Reduced pricing on parts and labor</li>
+                                <li><i class="fas fa-check"></i> Comprehensive Coverage: All systems included in one package</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-business-time"></i> Ideal For</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Businesses</span>
+                                <span class="application-tag">Property Managers</span>
+                                <span class="application-tag">Multiple Properties</span>
+                                <span class="application-tag">Budget Planning</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Annual Maintenance Contracts">
+                                <i class="fas fa-arrow-right"></i> View Contract Options
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> Annual commitment
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Guide -->
+            <div class="quick-guide">
+                <h3>Choose Your Maintenance Plan</h3>
+                <p>Select the level of care that matches your needs, from basic inspections to comprehensive annual contracts with priority emergency support.</p>
+                
+                <div class="guide-options">
+                    <div class="guide-option">
+                        <h4><i class="fas fa-calendar-check"></i> Basic Plan</h4>
+                        <p>Quarterly inspections and basic maintenance for residential systems</p>
+                    </div>
+                    
+                    <div class="guide-option">
+                        <h4><i class="fas fa-star"></i> Gold Plan</h4>
+                        <p>Bi-monthly inspections, priority emergency response, and discounted repairs</p>
+                    </div>
+                    
+                    <div class="guide-option">
+                        <h4><i class="fas fa-crown"></i> Platinum Plan</h4>
+                        <p>Monthly inspections, 24/7 emergency support, and full system coverage</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <a href="#inquiry" class="btn" style="background-color: var(--primary); color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block;">
+                        <i class="fas fa-calendar-check"></i> Compare Maintenance Plans
+                    </a>
+                    <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 15px;">
+                        Emergency hotline available 24/7: <strong>+254 705 059 964</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Maintenance & Support Services Inquiry Form -->
+    <div class="container">
+        <div class="form-header" id="inquiry">
+            <h1 class="section-title">Maintenance & Support Services Inquiry</h1>
+            <p class="section-description">Get professional care for your electrical, solar, and smart home systems in 3 simple steps</p>
+        </div>
+        
+        <div class="form-container">
+            <!-- Left Sidebar - FAQs -->
+            <div class="form-sidebar">
+                <div class="sidebar-content">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="logo-text">Maintenance FAQs</div>
+                    </div>
+                    
+                    <div class="faq-section">
+                        <h3><i class="fas fa-question-circle"></i> Maintenance FAQs</h3>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                How often should I schedule maintenance?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Solar systems: Every 6 months. Electrical systems: Annually. Smart homes: Quarterly for optimal performance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Do you offer emergency services?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! 24/7 emergency support with 2-4 hour response times for contract customers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What's included in maintenance contracts?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Scheduled inspections, cleaning, software updates, priority service, and discounted repairs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Can I get a one-time service?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We offer both subscription plans and one-time service visits.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Do you provide compliance certificates?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, all maintenance includes EPRA/NEMA compliance checks and certification.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What's your response time for emergencies?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>2-4 hours for Gold/Platinum members, same-day for all other emergency requests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side - Form Content -->
+            <div class="form-content">
+                <!-- Progress Indicator -->
+                <div class="progress-indicator">
+                    <div class="progress-steps">
+                        <div class="progress-step active">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Contact & Systems</div>
+                        </div>
+                        <div class="progress-step">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Service Type</div>
+                        </div>
+                        <div class="progress-step">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Review & Submit</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 33%"></div>
+                    </div>
+                </div>
+                
+                <!-- Maintenance Services Form -->
+                <form id="maintenanceForm">
+                    <!-- Section 1: Contact & Systems -->
+                    <div class="form-section active" id="section-contact">
+                        <div class="section-label">
+                            <i class="fas fa-user"></i>
+                            <span>Your Contact Information</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fullName">
+                                <i class="fas fa-signature"></i>
+                                Full Name *
+                            </label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mobile">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    Mobile Number *
+                                </label>
+                                <input type="tel" id="mobile" class="form-control" placeholder="07XX XXX XXX" required>
+                                <small class="form-hint">We'll call this number</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email Address *
+                                </label>
+                                <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Location *
+                            </label>
+                            <input type="text" id="location" class="form-control" placeholder="City, Estate, or Area" required>
+                        </div>
+                        
+                        <!-- System Selection -->
+                        <div class="form-group">
+                            <label>
+                                <i class="fas fa-cogs"></i>
+                                Systems Needing Maintenance *
+                            </label>
+                            <div class="service-checkboxes">
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="systems" value="solar" onchange="updateSelection()">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-solar-panel"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Solar Systems</strong>
+                                            <span>Panels, inverters, batteries</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="systems" value="electrical" onchange="updateSelection()">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Electrical Systems</strong>
+                                            <span>Wiring, DB boards, circuits</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="systems" value="smart-home" onchange="updateSelection()">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Smart Home Systems</strong>
+                                            <span>Automation, security, AV</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="systems" value="all" onchange="updateSelection()">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>All Systems</strong>
+                                            <span>Complete property maintenance</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="submit-btn" onclick="validateContactSection()">
+                            Next: Service Type <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Section 2: Service Type -->
+                    <div class="form-section" id="section-service">
+                        <div class="section-label">
+                            <i class="fas fa-concierge-bell"></i>
+                            <span>Service Type & Urgency</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <i class="fas fa-tools"></i>
+                                Service Type Needed *
+                            </label>
+                            <div class="service-type-options">
+                                <div class="service-type-option" onclick="selectServiceType('preventive')">
+                                    <div class="service-type-icon">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <div class="service-type-name">Preventive Maintenance</div>
+                                    <input type="radio" name="serviceType" value="preventive" hidden>
+                                    <small style="color: var(--secondary); font-size: 0.8rem;">Scheduled care</small>
+                                </div>
+                                
+                                <div class="service-type-option" onclick="selectServiceType('corrective')">
+                                    <div class="service-type-icon">
+                                        <i class="fas fa-wrench"></i>
+                                    </div>
+                                    <div class="service-type-name">Corrective Repair</div>
+                                    <input type="radio" name="serviceType" value="corrective" hidden>
+                                    <small style="color: var(--secondary); font-size: 0.8rem;">Fix existing issues</small>
+                                </div>
+                                
+                                <div class="service-type-option" onclick="selectServiceType('audit')">
+                                    <div class="service-type-icon">
+                                        <i class="fas fa-clipboard-check"></i>
+                                    </div>
+                                    <div class="service-type-name">Health Audit</div>
+                                    <input type="radio" name="serviceType" value="audit" hidden>
+                                    <small style="color: var(--secondary); font-size: 0.8rem;">Performance check</small>
+                                </div>
+                                
+                                <div class="service-type-option" onclick="selectServiceType('contract')">
+                                    <div class="service-type-icon">
+                                        <i class="fas fa-file-contract"></i>
+                                    </div>
+                                    <div class="service-type-name">Annual Contract</div>
+                                    <input type="radio" name="serviceType" value="contract" hidden>
+                                    <small style="color: var(--secondary); font-size: 0.8rem;">Subscription plan</small>
+                                </div>
+                            </div>
+                            <input type="hidden" id="serviceType" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <i class="fas fa-exclamation-triangle"></i>
+                                Service Urgency *
+                            </label>
+                            <div class="emergency-options">
+                                <div class="emergency-option" onclick="selectEmergency('emergency')">
+                                    <span class="emergency-label">Emergency</span>
+                                    <span class="emergency-note">24/7 urgent response</span>
+                                    <input type="radio" name="urgency" value="emergency" hidden>
+                                </div>
+                                
+                                <div class="emergency-option" onclick="selectEmergency('priority')">
+                                    <span class="emergency-label">Priority</span>
+                                    <span class="emergency-note">Within 24 hours</span>
+                                    <input type="radio" name="urgency" value="priority" hidden>
+                                </div>
+                                
+                                <div class="emergency-option" onclick="selectEmergency('scheduled')">
+                                    <span class="emergency-label">Scheduled</span>
+                                    <span class="emergency-note">Next available slot</span>
+                                    <input type="radio" name="urgency" value="scheduled" hidden>
+                                </div>
+                                
+                                <div class="emergency-option" onclick="selectEmergency('consultation')">
+                                    <span class="emergency-label">Consultation</span>
+                                    <span class="emergency-note">Discuss options first</span>
+                                    <input type="radio" name="urgency" value="consultation" hidden>
+                                </div>
+                            </div>
+                            <input type="hidden" id="urgency" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="issueDescription">
+                                <i class="fas fa-edit"></i>
+                                Describe the Issue/Need *
+                            </label>
+                            <textarea id="issueDescription" class="form-control" placeholder="Please describe what you're experiencing or what maintenance you need..." rows="3" required></textarea>
+                            <small class="form-hint">Be as specific as possible for accurate service assessment</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredTime">
+                                <i class="fas fa-clock"></i>
+                                Preferred Service Time
+                            </label>
+                            <select id="preferredTime" class="form-control">
+                                <option value="">Any time</option>
+                                <option value="morning">Morning (8AM-12PM)</option>
+                                <option value="afternoon">Afternoon (12PM-4PM)</option>
+                                <option value="evening">Evening (4PM-7PM)</option>
+                                <option value="weekend">Weekend</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="button" class="submit-btn btn-secondary" onclick="prevSection('contact')">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button type="button" class="submit-btn" onclick="validateServiceSection()">
+                                Next: Review & Submit <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 3: Review & Submit -->
+                    <div class="form-section" id="section-review">
+                        <div class="section-label">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Review & Submit</span>
+                        </div>
+                        
+                        <div class="review-summary" id="reviewSummary">
+                            <!-- Summary will appear here -->
+                        </div>
+                        
+                        <div class="preference-select">
+                            <p><i class="fas fa-comments"></i> Preferred contact method:</p>
+                            <div class="preference-options">
+                                <label class="preference-option">
+                                    <input type="radio" name="contactMethod" value="whatsapp" checked>
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </label>
+                                <label class="preference-option">
+                                    <input type="radio" name="contactMethod" value="call">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Phone Call</span>
+                                </label>
+                                <label class="preference-option">
+                                    <input type="radio" name="contactMethod" value="email">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="agreeTerms" required>
+                                <label for="agreeTerms">
+                                    I agree to receive service calls and quotes for maintenance services
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="button" class="submit-btn btn-secondary" onclick="prevSection('service')">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Submit Maintenance Request
+                            </button>
+                        </div>
+                        
+                        <p class="form-footer">
+                            <i class="fas fa-lock"></i>
+                            <strong>Emergency hotline:</strong> +254 705 059 964 (24/7)
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Rosanatech Footer -->
+    <footer id="rosanatech-footer">
+        <div class="rtech-footer-container">
+            <div class="rtech-footer-content">
+                <div class="rtech-footer-columns">
+                    <!-- Column 1 -->
+                    <div class="rtech-footer-column">
+                        <a href="#" class="rtech-footer-logo">Rosanatech</a>
+                        <p class="rtech-company-description">
+                            Rosanatech Solutions is a premier electrical, solar, smart home, and construction company in Nairobi, Kenya—delivering reliable solutions in power systems, solar installations, building works, automation, security systems, and maintenance.
+                        </p>
+                        <div class="rtech-social-icons">
+                            <a href="https://web.facebook.com/profile.php?id=61569216960441" class="rtech-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/RosanatechX" class="rtech-social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@rosanatech_solutions" class="rtech-social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://whatsapp.com/channel/0029VbBuYBWBFLgU7OT5BZ3z" class="rtech-social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/company/rosanatech-solutions/?viewAsMember=true" class="rtech-social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="rtech-newsletter" style="display: none;">
+                            <h4>Stay Updated</h4>
+                            <div class="rtech-newsletter-form">
+                                <input type="email" class="rtech-newsletter-input" placeholder="Your email address">
+                                <button class="rtech-newsletter-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Quick Links</h3>
+                        <ul class="rtech-footer-links">
+                            <li><a href="#"><i class="fas fa-home fa-xs"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-info-circle fa-xs"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-cogs fa-xs"></i> Services</a></li>
+                            <li><a href="#"><i class="fas fa-project-diagram fa-xs"></i> Projects</a></li>
+                            <li><a href="#"><i class="fas fa-blog fa-xs"></i> Blog / Resources</a></li>
+                            <li><a href="#"><i class="fas fa-envelope fa-xs"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Company Information</h3>
+                        <ul class="rtech-footer-links">
+                            <li><a href="#"><i class="fas fa-building fa-xs"></i> Corporate Information</a></li>
+                            <li><a href="#"><i class="fas fa-gavel fa-xs"></i> Governance & Compliance</a></li>
+                            <li><a href="#"><i class="fas fa-boxes fa-xs"></i> Company Resources</a></li>
+                            <li><a href="#"><i class="fas fa-briefcase fa-xs"></i> Corporate Affairs</a></li>
+                            <li><a href="#"><i class="fas fa-users-cog fa-xs"></i> Administration</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt fa-xs"></i> Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Contact Info</h3>
+                        <ul class="rtech-contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Nairobi, Kenya</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@rosanatechsolutions.co.ke</span></li>
+                            <li><i class="fas fa-phone"></i><span>+254 700 000 000</span></li>
+                            <li><i class="fas fa-clock"></i><span>Mon–Sat 8:00 AM – 6:00 PM</span></li>
+                            <li><i class="fas fa-phone-volume"></i><span>Emergency: +254 711 000 000</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="rtech-footer-bottom">
+                <div class="rtech-footer-bottom-content">
+                    <div class="rtech-copyright">© 2025 Rosanatech Solutions. All rights reserved.</div>
+                    <div class="rtech-developer">Made by <a href="#">PresenceLab Digital Solutions</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="rtech-back-to-top" id="rtechBackToTop" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+    <!-- Services Filtering Script -->
+    <script>
+        // Services Filtering
+        function filterServices(category) {
+            // Update active tab
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Filter service cards
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = 'flex';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+        
+        // Service link click handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceLinks = document.querySelectorAll('.service-link');
+            serviceLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const serviceName = this.getAttribute('data-service');
+                    localStorage.setItem('selectedMaintenanceService', serviceName);
+                    
+                    // Redirect to inquiry form or show modal
+                    alert(`Thank you for your interest in ${serviceName}! Our maintenance specialists will contact you shortly.`);
+                    // In production: window.location.href = 'quote.html?service=' + encodeURIComponent(serviceName);
+                });
+            });
+        });
+    </script>
+    
+      <!-- form intake Script -->
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+
+        // Service Type Selection
+        function selectServiceType(type) {
+            // Remove selected class from all
+            document.querySelectorAll('.service-type-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked
+            const clickedOption = event.currentTarget;
+            clickedOption.classList.add('selected');
+            
+            // Update hidden input
+            document.getElementById('serviceType').value = type;
+            
+            // Check the radio button
+            const radio = clickedOption.querySelector('input[type="radio"]');
+            radio.checked = true;
+        }
+
+        // Emergency Level Selection
+        function selectEmergency(level) {
+            // Remove selected class from all
+            document.querySelectorAll('.emergency-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked
+            const clickedOption = event.currentTarget;
+            clickedOption.classList.add('selected');
+            
+            // Update hidden input
+            document.getElementById('urgency').value = level;
+            
+            // Check the radio button
+            const radio = clickedOption.querySelector('input[type="radio"]');
+            radio.checked = true;
+        }
+
+        // Update Selection
+        function updateSelection() {
+            // This function updates visual state of checkboxes
+            // (handled by CSS :checked selector)
+        }
+
+        // Form Navigation
+        function validateContactSection() {
+            const name = document.getElementById('fullName').value;
+            const mobile = document.getElementById('mobile').value;
+            const email = document.getElementById('email').value;
+            const location = document.getElementById('location').value;
+            const systems = Array.from(document.querySelectorAll('input[name="systems"]:checked'));
+            
+            if (!name || !mobile || !email || !location) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Validate mobile number
+            const mobileRegex = /^(\+?254|0)[17]\d{8}$/;
+            if (!mobileRegex.test(mobile)) {
+                alert('Please enter a valid Kenyan mobile number (e.g., 0712345678 or 254712345678)');
+                return;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            if (systems.length === 0) {
+                alert('Please select at least one system type');
+                return;
+            }
+            
+            showSection('service');
+            updateProgress(66);
+        }
+
+        function validateServiceSection() {
+            const serviceType = document.getElementById('serviceType').value;
+            const urgency = document.getElementById('urgency').value;
+            const issueDescription = document.getElementById('issueDescription').value;
+            
+            if (!serviceType || !urgency || !issueDescription) {
+                alert('Please select service type, urgency, and describe the issue');
+                return;
+            }
+            
+            // Update review summary
+            updateReviewSummary();
+            
+            showSection('review');
+            updateProgress(100);
+        }
+
+        function showSection(sectionName) {
+            // Hide all sections
+            document.querySelectorAll('.form-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show target section
+            document.getElementById(`section-${sectionName}`).classList.add('active');
+        }
+
+        function prevSection(sectionName) {
+            showSection(sectionName);
+            updateProgress(sectionName === 'contact' ? 33 : 66);
+        }
+
+        function updateProgress(percentage) {
+            document.getElementById('progressFill').style.width = `${percentage}%`;
+            
+            // Update step indicators
+            const steps = document.querySelectorAll('.progress-step');
+            steps.forEach((step, index) => {
+                step.classList.remove('active');
+                if ((index === 0 && percentage >= 33) || 
+                    (index === 1 && percentage >= 66) || 
+                    (index === 2 && percentage >= 99)) {
+                    step.classList.add('active');
+                }
+            });
+        }
+
+        function updateReviewSummary() {
+            const summary = document.getElementById('reviewSummary');
+            
+            // Collect all form data
+            const formData = {
+                name: document.getElementById('fullName').value,
+                mobile: document.getElementById('mobile').value,
+                email: document.getElementById('email').value,
+                location: document.getElementById('location').value,
+                systems: [],
+                serviceType: document.getElementById('serviceType').value,
+                urgency: document.getElementById('urgency').value,
+                issueDescription: document.getElementById('issueDescription').value,
+                preferredTime: document.getElementById('preferredTime').value || 'Any time',
+                contactMethod: document.querySelector('input[name="contactMethod"]:checked').value
+            };
+            
+            // Get selected systems
+            document.querySelectorAll('input[name="systems"]:checked').forEach(checkbox => {
+                const systemNames = {
+                    'solar': 'Solar Systems',
+                    'electrical': 'Electrical Systems',
+                    'smart-home': 'Smart Home Systems',
+                    'all': 'All Systems'
+                };
+                formData.systems.push(systemNames[checkbox.value] || checkbox.value);
+            });
+            
+            // Get service type label
+            const serviceTypeLabels = {
+                'preventive': 'Preventive Maintenance',
+                'corrective': 'Corrective Repair',
+                'audit': 'Health Audit',
+                'contract': 'Annual Contract'
+            };
+            
+            // Get urgency label
+            const urgencyLabels = {
+                'emergency': 'Emergency (24/7)',
+                'priority': 'Priority (24 hours)',
+                'scheduled': 'Scheduled',
+                'consultation': 'Consultation'
+            };
+            
+            // Get preferred time label
+            const timeLabels = {
+                'morning': 'Morning (8AM-12PM)',
+                'afternoon': 'Afternoon (12PM-4PM)',
+                'evening': 'Evening (4PM-7PM)',
+                'weekend': 'Weekend',
+                '': 'Any time'
+            };
+            
+            // Create summary HTML
+            let summaryHTML = `
+                <h4><i class="fas fa-file-alt"></i> Maintenance Request Summary</h4>
+                <div style="margin-top: 15px;">
+                    <p><strong>Contact Details:</strong><br>
+                    ${formData.name}<br>
+                    ${formData.mobile}<br>
+                    ${formData.email}<br>
+                    ${formData.location}</p>
+                    
+                    <p><strong>Systems:</strong> ${formData.systems.join(', ')}</p>
+                    <p><strong>Service Type:</strong> ${serviceTypeLabels[formData.serviceType]}</p>
+                    <p><strong>Urgency:</strong> ${urgencyLabels[formData.urgency]}</p>
+                    <p><strong>Preferred Time:</strong> ${timeLabels[formData.preferredTime]}</p>
+                    <p><strong>Issue Description:</strong><br>${formData.issueDescription}</p>
+                    <p><strong>Contact Method:</strong> ${formData.contactMethod}</p>
+                </div>
+            `;
+            
+            summary.innerHTML = summaryHTML;
+        }
+
+        // Form submission
+        document.getElementById('maintenanceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!document.getElementById('agreeTerms').checked) {
+                alert('Please agree to receive service calls and quotes');
+                return;
+            }
+            
+            // Show success modal
+            showSuccessModal();
+        });
+
+        // Success Modal Function
+        function showSuccessModal() {
+            // Create modal overlay
+            const modalOverlay = document.createElement('div');
+            modalOverlay.className = 'success-modal';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.className = 'success-modal-content';
+            
+            // Add success icon
+            const successIcon = document.createElement('div');
+            successIcon.style.cssText = `
+                width: 80px;
+                height: 80px;
+                background-color: var(--success);
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 25px;
+                font-size: 35px;
+            `;
+            successIcon.innerHTML = '<i class="fas fa-check"></i>';
+            
+            // Add message
+            const messageText = document.createElement('div');
+            messageText.style.cssText = `
+                color: var(--charcoal);
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 30px;
+                white-space: pre-line;
+            `;
+            
+            const name = document.getElementById('fullName').value;
+            const urgency = document.getElementById('urgency').value;
+            const contactMethod = document.querySelector('input[name="contactMethod"]:checked').value;
+            
+            let urgencyMessage = '';
+            if (urgency === 'emergency') {
+                urgencyMessage = '\n🚨 **EMERGENCY REQUEST RECEIVED**\nOur team will call you within 15 minutes!';
+            } else if (urgency === 'priority') {
+                urgencyMessage = '\n⏰ **PRIORITY REQUEST**\nWe\'ll contact you within 2 hours.';
+            } else {
+                urgencyMessage = '\n📅 We\'ll contact you within 24 hours to schedule your service.';
+            }
+            
+            messageText.innerHTML = `Thank you ${name}!<br><br>
+✅ Your maintenance request has been submitted successfully.
+${urgencyMessage}
+<br><br>
+📞 For immediate emergencies:<br>
+<strong>+254 705 059 964 (24/7)</strong>
+<br><br>
+🔧 Our maintenance team will contact you via ${contactMethod} soon.`;
+            
+            // Add action buttons
+            const buttonContainer = document.createElement('div');
+            buttonContainer.style.cssText = `
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+            `;
+            
+            const closeBtn = document.createElement('button');
+            closeBtn.style.cssText = `
+                background-color: var(--primary);
+                color: white;
+                border: none;
+                padding: 12px 30px;
+                border-radius: 30px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            `;
+            closeBtn.innerHTML = '<i class="fas fa-thumbs-up"></i> Got It, Thanks!';
+            closeBtn.onmouseover = () => closeBtn.style.transform = 'translateY(-3px)';
+            closeBtn.onmouseout = () => closeBtn.style.transform = 'translateY(0)';
+            closeBtn.onclick = () => {
+                modalOverlay.remove();
+                // Reset form
+                document.getElementById('maintenanceForm').reset();
+                document.querySelectorAll('.service-type-option, .emergency-option').forEach(el => {
+                    el.classList.remove('selected');
+                });
+                showSection('contact');
+                updateProgress(33);
+                
+                // Scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
+            
+            const callBtn = document.createElement('a');
+            callBtn.href = 'tel:+254705059964';
+            callBtn.style.cssText = `
+                background-color: var(--accent);
+                color: white;
+                border: none;
+                padding: 12px 30px;
+                border-radius: 30px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-decoration: none;
+                display: inline-block;
+            `;
+            callBtn.innerHTML = '<i class="fas fa-phone-alt"></i> Call Emergency Line';
+            callBtn.onmouseover = () => callBtn.style.transform = 'translateY(-3px)';
+            callBtn.onmouseout = () => callBtn.style.transform = 'translateY(0)';
+            
+            buttonContainer.appendChild(closeBtn);
+            buttonContainer.appendChild(callBtn);
+            
+            // Assemble modal
+            modalContent.appendChild(successIcon);
+            modalContent.appendChild(messageText);
+            modalContent.appendChild(buttonContainer);
+            modalOverlay.appendChild(modalContent);
+            
+            // Add to document
+            document.body.appendChild(modalOverlay);
+            
+            // Close on overlay click
+            modalOverlay.onclick = (e) => {
+                if (e.target === modalOverlay) {
+                    modalOverlay.remove();
+                    // Reset form
+                    document.getElementById('maintenanceForm').reset();
+                    document.querySelectorAll('.service-type-option, .emergency-option').forEach(el => {
+                        el.classList.remove('selected');
+                    });
+                    showSection('contact');
+                    updateProgress(33);
+                    
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            };
+            
+            // Auto-close after 10 seconds (except for emergencies)
+            if (urgency !== 'emergency') {
+                setTimeout(() => {
+                    if (document.body.contains(modalOverlay)) {
+                        modalOverlay.remove();
+                        // Reset form
+                        document.getElementById('maintenanceForm').reset();
+                        document.querySelectorAll('.service-type-option, .emergency-option').forEach(el => {
+                            el.classList.remove('selected');
+                        });
+                        showSection('contact');
+                        updateProgress(33);
+                        
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 10000);
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgress(33);
+        });
+    </script>
+</body>
+</html>

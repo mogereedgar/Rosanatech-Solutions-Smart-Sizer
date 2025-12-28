@@ -1,0 +1,3693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Engineering & Professional Wiring Services Kenya | Rosanatech</title>
+    <meta name="description" content="Certified electrical engineering services in Kenya. From domestic wiring to industrial installations, Rosanatech ensures safety and efficiency. Book a professional site audit today!">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables for Colors */
+        :root {
+            --primary: #2E7D32;
+            --primary-light: #4CAF50;
+            --primary-dark: #1B5E20;
+            --secondary: #607D8B; /* Slate Grey */
+            --white: #FFFFFF;
+            --charcoal: #37474F;
+            --light-grey: #F5F7FA;
+            --border-color: #E0E0E0;
+             --accent: #FF9800;
+             --warning: #FF9800;
+            --success: #4CAF50;
+            --info: #2196F3;
+        }
+        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: var(--white);
+            width: 100%;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 0px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+        }
+        
+        .btn i {
+            margin-left: 8px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/electrical_installation.jpg') no-repeat center center/cover;
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            max-width: 900px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.2rem;
+        }
+         @media (max-width: 768px) {
+            .hero h1 {
+                display: none;
+            }
+        }
+        /* Electrical Services Section */
+        .electrical-services-section {
+            padding: 20px 0;
+            background-color: var(--white);
+        }
+        
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto 50px;
+        }
+        
+        .section-subtitle {
+            display: inline-block;
+            color: var(--primary);
+            background-color: rgba(46, 125, 50, 0.1);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--charcoal);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            max-width: 700px;
+            margin: 30px auto 0;
+        }
+        
+        /* Services Tabs */
+        .services-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+        
+        .tab-btn {
+            padding: 12px 24px;
+            background-color: transparent;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            position: relative;
+        }
+        
+        .tab-btn:hover {
+            color: var(--primary);
+            background-color: rgba(46, 125, 50, 0.05);
+        }
+        
+        .tab-btn.active {
+            color: var(--white);
+            background-color: var(--primary);
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+        }
+        
+        .tab-btn.active:after {
+            content: '';
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid var(--primary);
+        }
+        
+        /* Electrical Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        /* Service Card */
+        .service-card {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--primary);
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        .service-card.featured {
+            border-left-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(255, 152, 0, 0.15);
+        }
+        
+        /* Service Image Gallery */
+        .service-gallery {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .main-service-image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .main-service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .main-service-image img {
+            transform: scale(1.05);
+        }
+        
+        .image-counter {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .location-badge {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background-color: rgba(46, 125, 50, 0.9);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Service Header */
+        .service-header {
+            padding: 25px 25px 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .service-card.featured .service-icon {
+            background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 152, 0, 0.2));
+            color: var(--accent);
+        }
+        
+        .service-title-container {
+            flex: 1;
+        }
+        
+        .service-title {
+            color: var(--charcoal);
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .service-subtitle {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        /* Service Badge */
+        .service-badge {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+        
+        .service-card.featured .service-badge {
+            background-color: var(--accent);
+        }
+        
+        /* Service Content */
+        .service-content {
+            padding: 0 25px;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .service-description {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Technical Highlights */
+        .tech-highlights {
+            background-color: rgba(46, 125, 50, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .tech-highlights h4 {
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tech-highlights ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .tech-highlights li {
+            padding: 4px 0;
+            font-size: 0.8rem;
+            color: var(--charcoal);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        
+        .tech-highlights li i {
+            color: var(--primary);
+            font-size: 0.75rem;
+            margin-top: 3px;
+        }
+        
+        /* Applications */
+        .applications {
+            margin-top: 15px;
+        }
+        
+        .applications h4 {
+            color: var(--charcoal);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .application-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .application-tag {
+            background-color: var(--light-grey);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            color: var(--charcoal);
+        }
+        
+        /* Service Footer */
+        .service-footer {
+            padding: 20px 25px;
+            border-top: 1px solid var(--border-color);
+            background-color: rgba(245, 247, 250, 0.5);
+        }
+        
+        .service-cta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .service-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-link:hover {
+            color: var(--primary-dark);
+            gap: 12px;
+        }
+        
+        .service-card.featured .service-link {
+            color: var(--accent);
+        }
+        
+        .service-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.8rem;
+            color: var(--secondary);
+        }
+        
+        .service-indicator i {
+            color: var(--primary-light);
+        }
+        
+        /* Quick Guide */
+        .quick-guide {
+            background-color: var(--light-grey);
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .quick-guide h3 {
+            color: var(--charcoal);
+            margin-bottom: 20px;
+        }
+        
+        .guide-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .guide-option {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .guide-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .guide-option h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-description {
+                font-size: 1.05rem;
+            }
+            
+            .services-tabs {
+                gap: 8px;
+            }
+            
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .guide-options {
+                gap: 15px;
+            }
+            
+            .guide-option {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .electrical-services-section {
+                padding: 60px 0;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-card {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .services-tabs {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 10px;
+            }
+            
+            .tab-btn {
+                white-space: nowrap;
+            }
+            
+            .tab-btn.active:after {
+                display: none;
+            }
+            
+            .quick-guide {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .service-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .service-title-container {
+                width: 100%;
+            }
+            
+            .service-cta {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+            
+            .service-gallery {
+                height: 180px;
+            }
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .service-card {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+        
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
+        .service-card:nth-child(5) { animation-delay: 0.5s; }
+        .service-card:nth-child(6) { animation-delay: 0.6s; }
+
+
+        /* client intake form styles */
+         /* Header Styles */
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Main Form Container */
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            align-items: stretch;
+            min-height: 800px;
+        }
+        
+        /* Left Sidebar - FAQs */
+        .form-sidebar {
+            background-color: var(--light-grey);
+            padding: 40px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            border-right: 1px solid var(--border-color);
+        }
+        
+        .sidebar-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            margin-bottom: 30px;
+        }
+        
+        .faq-section h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background-color: white;
+        }
+        
+        .faq-question {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--charcoal);
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(33, 150, 243, 0.05);
+        }
+        
+        .faq-question i {
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        .faq-answer.active {
+            padding: 15px;
+            max-height: 500px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .faq-answer p {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .faq-answer li {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        
+        /* Form Content */
+        .form-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Progress Indicator */
+        .progress-indicator {
+            margin-bottom: 30px;
+        }
+        
+        .progress-steps {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .progress-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 35px;
+            height: 35px;
+            background-color: var(--border-color);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .progress-step.active .step-number {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .step-label {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .progress-step.active .step-label {
+            color: var(--primary);
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background-color: var(--border-color);
+            border-radius: 2px;
+            margin-top: -2px;
+            position: relative;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            border-radius: 2px;
+            transition: width 0.5s ease;
+            width: 33%;
+        }
+        
+        /* Form Sections */
+        .form-section {
+            animation: fadeIn 0.5s ease;
+            display: none;
+            flex: 1;
+        }
+        
+        .form-section.active {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        /* Form Groups */
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 0.95rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: var(--white);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+        }
+        
+        .form-hint {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        /* County Autocomplete */
+        .county-autocomplete {
+            position: relative;
+        }
+        
+        .autocomplete-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 0 0 10px 10px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .autocomplete-list.active {
+            display: block;
+        }
+        
+        .autocomplete-item {
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .autocomplete-item:hover {
+            background-color: var(--light-grey);
+        }
+        
+        .autocomplete-item .county-name {
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+        
+        .autocomplete-item .survey-fee {
+            float: right;
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        /* Service Selection */
+        .service-checkboxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .service-checkbox {
+            display: block;
+            cursor: pointer;
+        }
+        
+        .service-checkbox input[type="checkbox"] {
+            display: none;
+        }
+        
+        .service-option {
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .service-checkbox input[type="checkbox"]:checked + .service-option {
+            border-color: var(--primary);
+            background-color: rgba(33, 150, 243, 0.05);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(33, 150, 243, 0.1);
+        }
+        
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(100, 181, 246, 0.2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .service-text strong {
+            display: block;
+            color: var(--charcoal);
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        
+        .service-text span {
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+        
+        /* Dynamic Questions - Max 5 per service */
+        .dynamic-questions {
+            margin: 25px 0;
+            flex: 1;
+        }
+        
+        .service-questions {
+            animation: slideIn 0.3s ease;
+            background-color: rgba(33, 150, 243, 0.03);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-10px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .service-questions h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-questions .form-group {
+            margin-bottom: 20px;
+        }
+        
+        /* Optional Details */
+        .optional-toggle {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px dashed var(--border-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .optional-toggle:hover {
+            border-color: var(--primary-light);
+        }
+        
+        .optional-toggle input[type="checkbox"] {
+            display: none;
+        }
+        
+        .optional-toggle label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            margin: 0;
+        }
+        
+        .optional-details {
+            display: none;
+            animation: fadeIn 0.5s ease;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin: 20px 0;
+        }
+        
+        .optional-toggle input[type="checkbox"]:checked ~ .optional-details {
+            display: block;
+        }
+        
+        /* Option Buttons */
+        .option-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .option-btn {
+            padding: 10px 20px;
+            background-color: white;
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex: 1;
+            min-width: 120px;
+        }
+        
+        .option-btn:hover {
+            border-color: var(--primary-light);
+        }
+        
+        .option-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        /* Site Survey Fee Display */
+        .survey-fee-display {
+            background-color: rgba(255, 152, 0, 0.1);
+            border: 2px solid var(--warning);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            display: none;
+        }
+        
+        .survey-fee-display.active {
+            display: block;
+        }
+        
+        .survey-fee-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .survey-fee-amount {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--warning);
+        }
+        
+        .survey-fee-details {
+            font-size: 0.85rem;
+            color: var(--charcoal);
+        }
+        
+        /* Checkboxes */
+        .form-checkbox {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .form-checkbox input[type="checkbox"] {
+            margin-top: 3px;
+            accent-color: var(--primary);
+        }
+        
+        /* Preferences */
+        .preference-select {
+            margin-top: 20px;
+        }
+        
+        .preference-select p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .preference-options {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .preference-option {
+            flex: 1;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .preference-option input[type="radio"] {
+            display: none;
+        }
+        
+        .preference-option i {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--secondary);
+        }
+        
+        .preference-option span {
+            font-size: 0.9rem;
+            color: var(--charcoal);
+        }
+        
+        .preference-option input[type="radio"]:checked + i + span {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .preference-option input[type="radio"]:checked ~ * {
+            color: var(--primary);
+        }
+        
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            border: none;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(33, 150, 243, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: var(--light-grey);
+            color: var(--charcoal);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--border-color);
+        }
+        
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        /* Success Modal */
+        .success-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .success-modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            animation: slideUp 0.5s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .form-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-sidebar {
+                display: none; /* Hide FAQ on mobile */
+            }
+            
+            .service-checkboxes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .form-content {
+                padding: 25px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .service-checkboxes {
+                grid-template-columns: 1fr;
+            }
+            
+            .option-buttons {
+                flex-direction: column;
+            }
+            
+            .option-btn {
+                width: 100%;
+            }
+            
+            .preference-options {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .form-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR WITH INTEGRATED TICKER -->
+    <div class="top-bar" id="topBar">
+        <div class="container flex">
+            <div class="top-bar-left">
+                <i class="fas fa-envelope"></i>
+                <span class="email-text">info@rosanatechsolutions.co.ke</span>
+            </div>
+            
+            <!-- TICKER AREA -->
+            <div class="promo-ticker" id="promoTicker">
+                <div class="ticker-container" id="tickerContainer">
+                    <!-- Ticker content will be inserted by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61569216960441" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/RosanatechX" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@rosanatech_solutions" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBuYBWBFLgU7OT5BZ3z" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/rosanatech-solutions/?viewAsMember=true" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header Container -->
+    <div class="main-head" id="mainHead">
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container flex">
+                <div class="logo-section">
+                    <div class="logo-icon"><img src="assets/logo.png" alt="Rosanatech Logo"></div>
+                    <div class="logo-text">
+                        <div class="company-name">ROSANATECH</div>
+                        <div class="company-tagline">SOLUTIONS LIMITED</div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="phone-label"><i class="fas fa-phone-alt"></i> Free Call</div>
+                    <div class="phone-number">+254 705059964</div>
+                    <div class="phone-subtext">We're Just a Call Away</div>
+                </div>
+                
+                <div class="location-info">
+                    <div class="location-label"><i class="fas fa-map-marker-alt"></i> Our Location</div>
+                    <div class="location-details">Nairobi, Kenya</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <!-- Mobile Logo Button (replaces WhatsApp button) -->
+                <button class="mobile-logo-btn" id="mobileLogoBtn">
+                    <img src="assets/logo.png" alt="Rosanatech Logo">
+                    <span class="mobile-logo-btn-text">Make it Smart</span>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-bolt"></i> Services</a></li>
+                    <li><a href="projects.html"><i class="fas fa-solar-panel"></i> Projects</a></li>
+                    <li><a href="blog.html"><i class="fas fa-hubspot"></i> Blog</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                
+                <!-- Desktop WhatsApp Button -->
+                <a href="design.html" 
+                   class="nav-whatsapp-btn desktop" 
+                   id="whatsappBtn"
+                   target="_self"> 
+                    <i class="fas fa-solar-panel" style="color: #FFBF00;"></i> Get My Solar Design
+                </a>
+            </div>
+        </nav>
+    </div>
+
+   <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <img src="assets/logo.png" alt="Rosanatech Logo">
+                <div class="mobile-logo-text">Make it Smart</div>
+            </div>
+            <button class="mobile-close" id="mobileClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-links">
+            <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="services.html"><i class="fas fa-bolt"></i> Services</a></li>
+            <li><a href="projects.html"><i class="fas fa-solar-panel"></i> Projects</a></li>
+            <li><a href="blog.html"><i class="fas fa-hubspot"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        
+        <a href="design.html" class="mobile-cta inquire" >
+            <i class="fas fa-solar-panel " style="color: #FFBF00;"></i>Get My Solar Design 
+        </a>
+
+         <a href="https://wa.me/254705059964?text=Hello%20Rosanatech%20Solutions%20Limited!%20I%20would%20like%20to%20inquire%20about%20your%20electrical%20and%20solar%20services." 
+           class="mobile-cta" 
+           target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp Direct
+        </a>
+        
+        <div class="mobile-contact">
+            <h4><i class="fas fa-headset"></i> Contact Us</h4>
+            <div class="mobile-contact-info">
+                <div><i class="fas fa-envelope"></i> info@rosanatechsolutions.co.ke</div>
+                <div><i class="fas fa-phone"></i> +254 705 059 964</div>
+                <div><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <!-- END OF MOBILE MENU -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Wiring & Power Safety Upgrades</h1>
+            <p>Safe, modern electrical engineering for all properties. We specialize in certified wiring, energy audits, and high-standard power protection.</p>
+    </section>
+
+    <!-- Electrical Services Section -->
+    <div class="container">
+        <section class="electrical-services-section">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Professional Electrical Services in Kenya</h2>
+                <p class="section-description">From residential wiring to commercial power systems, we deliver safe, efficient, and compliant electrical solutions with the Rosanatech Standard of excellence.</p>
+            </div>
+            
+            <!-- Services Tabs -->
+            <div class="services-tabs">
+                <button class="tab-btn active" onclick="filterServices('all')">All Services</button>
+                <button class="tab-btn" onclick="filterServices('residential')">Residential</button>
+                <button class="tab-btn" onclick="filterServices('commercial')">Commercial</button>
+                <button class="tab-btn" onclick="filterServices('lighting')">Lighting</button>
+                <button class="tab-btn" onclick="filterServices('safety')">Safety & Maintenance</button>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Domestic Electrical Installations -->
+                <div class="service-card featured" data-category="residential">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="assets/piping.jpg" alt="Professional domestic electrical installation" id="domestic-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 3 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Westlands, Nairobi
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Residential & Apartment Wiring</h3>
+                            <div class="service-subtitle">Precision-Engineered Power Systems</div>
+                            <span class="service-badge">Most Popular</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Precision-engineered power systems for modern homes. We move beyond basic wiring to provide a safe, scalable foundation for your family's comfort.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Technical Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Full House Wiring & Rewiring</li>
+                                <li><i class="fas fa-check"></i> Distribution Board (DB) Setup with RCD Protection</li>
+                                <li><i class="fas fa-check"></i> Load Balancing for Appliance Safety</li>
+                                <li><i class="fas fa-check"></i> Pre-wiring for Home Automation & Solar</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-home"></i> Ideal Applications</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">New Construction</span>
+                                <span class="application-tag">Home Renovation</span>
+                                <span class="application-tag">Apartment Complexes</span>
+                                <span class="application-tag">Extension Wiring</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Residential Electrical Installations">
+                                <i class="fas fa-arrow-right"></i> Secure My Home
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 2-4 day installation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Commercial & Industrial Electrical -->
+                <div class="service-card" data-category="commercial">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="assets/electrical_installation.jpg">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 3 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Nairobi CBD
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Institutional Power Solutions</h3>
+                            <div class="service-subtitle">High-Capacity Electrical Infrastructure</div>
+                            <span class="service-badge">Zero Downtime</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">High-capacity electrical infrastructure designed for business continuity. We specialize in robust systems that handle heavy loads with zero downtime.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> System Components</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Three-Phase Power Installation & Balancing</li>
+                                <li><i class="fas fa-check"></i> Structured Office Cabling & Containment</li>
+                                <li><i class="fas fa-check"></i> Emergency Lighting & Safety Exit Systems</li>
+                                <li><i class="fas fa-check"></i> Industrial Grade Surge Protection (SPD)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-building"></i> Ideal Applications</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Office Buildings</span>
+                                <span class="application-tag">Shopping Malls</span>
+                                <span class="application-tag">Industrial Plants</span>
+                                <span class="application-tag">Educational Institutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Commercial Electrical Systems">
+                                <i class="fas fa-arrow-right"></i> Power My Business
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 5-7 day installation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lighting Design -->
+                <div class="service-card" data-category="lighting">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Modern LED lighting installation" id="lighting-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 3 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Karen, Nairobi
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Energy-Efficient Illumination</h3>
+                            <div class="service-subtitle">Technical Lighting Design</div>
+                            <span class="service-badge">100% LED</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Transforming spaces through technical lighting design. We prioritize luminosity (Lux) accuracy and massive energy savings through 100% LED integration.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Design Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Strategic Ambient & Task Lighting</li>
+                                <li><i class="fas fa-check"></i> Outdoor Security & Perimeter Illumination</li>
+                                <li><i class="fas fa-check"></i> Lux Level Calculations for Productivity</li>
+                                <li><i class="fas fa-check"></i> Smart Dimming & Energy-Saving Sensors</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-sun"></i> Ideal Applications</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Residential Lighting</span>
+                                <span class="application-tag">Commercial Spaces</span>
+                                <span class="application-tag">Outdoor Areas</span>
+                                <span class="application-tag">Architectural Lighting</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Lighting Design">
+                                <i class="fas fa-arrow-right"></i> Design My Lighting
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 1-2 day installation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Safety Audits & Maintenance -->
+                <div class="service-card" data-category="safety">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="" alt="Electrical safety inspection" id="safety-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 2 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Professional Service
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Electrical Safety & Maintenance</h3>
+                            <div class="service-subtitle">Compliance & Preventive Care</div>
+                            <span class="service-badge">EPRA Certified</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Comprehensive electrical safety inspections, maintenance programs, and emergency services to ensure compliance and prevent electrical hazards.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Service Includes</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Complete Electrical Safety Inspection</li>
+                                <li><i class="fas fa-check"></i> Earth Resistance & Continuity Testing</li>
+                                <li><i class="fas fa-check"></i> Insulation Resistance Testing</li>
+                                <li><i class="fas fa-check"></i> Certificate of Compliance (COC) Issuance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-clipboard-check"></i> Ideal For</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Property Transfers</span>
+                                <span class="application-tag">Annual Maintenance</span>
+                                <span class="application-tag">Insurance Requirements</span>
+                                <span class="application-tag">Safety Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Electrical Safety Audits">
+                                <i class="fas fa-arrow-right"></i> Schedule Inspection
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 2-3 hour assessment
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Distribution Board Installation -->
+                <div class="service-card" data-category="residential">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Modern distribution board installation" id="db-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 2 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Runda Estate
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Distribution Board Setup</h3>
+                            <div class="service-subtitle">Modern Circuit Protection Systems</div>
+                            <span class="service-badge">RCD Protection</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Professional installation and upgrade of distribution boards with advanced protection devices for enhanced electrical safety and load management.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> RCD/RCBO Protection Installation</li>
+                                <li><i class="fas fa-check"></i> Circuit Labeling & Organization</li>
+                                <li><i class="fas fa-check"></i> Surge Protection Integration</li>
+                                <li><i class="fas fa-check"></i> Load Balancing & Monitoring</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-bolt"></i> Applications</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">DB Upgrades</span>
+                                <span class="application-tag">New Installations</span>
+                                <span class="application-tag">Safety Retrofit</span>
+                                <span class="application-tag">Load Expansion</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Distribution Board Installation">
+                                <i class="fas fa-arrow-right"></i> Upgrade My DB
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 1 day installation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emergency & Backup Power -->
+                <div class="service-card" data-category="commercial">
+                    <!-- Image Gallery -->
+                    <div class="service-gallery">
+                        <div class="main-service-image">
+                            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Emergency power system installation" id="emergency-main">
+                            <div class="image-counter">
+                                <i class="fas fa-camera"></i> 2 photos
+                            </div>
+                            <div class="location-badge">
+                                <i class="fas fa-map-marker-alt"></i> Industrial Area
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Header -->
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="service-title-container">
+                            <h3 class="service-title">Emergency Power Systems</h3>
+                            <div class="service-subtitle">Uninterruptible Power Supply</div>
+                            <span class="service-badge">Critical Systems</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Content -->
+                    <div class="service-content">
+                        <p class="service-description">Design and installation of emergency power systems including generators, UPS systems, and automatic transfer switches for critical operations.</p>
+                        
+                        <div class="tech-highlights">
+                            <h4><i class="fas fa-cogs"></i> System Components</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Automatic Transfer Switches</li>
+                                <li><i class="fas fa-check"></i> Generator Integration</li>
+                                <li><i class="fas fa-check"></i> UPS System Installation</li>
+                                <li><i class="fas fa-check"></i> Load Shedding Controls</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="applications">
+                            <h4><i class="fas fa-hotel"></i> Applications</h4>
+                            <div class="application-tags">
+                                <span class="application-tag">Hospitals</span>
+                                <span class="application-tag">Data Centers</span>
+                                <span class="application-tag">Hotels</span>
+                                <span class="application-tag">Manufacturing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Footer -->
+                    <div class="service-footer">
+                        <div class="service-cta">
+                            <a href="#inquiry" class="service-link" data-service="Emergency Power Systems">
+                                <i class="fas fa-arrow-right"></i> Secure Power Supply
+                            </a>
+                            <div class="service-indicator">
+                                <i class="fas fa-clock"></i> 3-5 day installation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Guide -->
+            <div class="quick-guide">
+                <h3>See Our Electrical Installation Process</h3>
+                <p>From initial assessment to final certification, we follow a meticulous process to ensure safety, compliance, and client satisfaction.</p>
+                
+                <div class="guide-options">
+                    <div class="guide-option">
+                        <h4><i class="fas fa-clipboard-check"></i> Free Site Assessment</h4>
+                        <p>Professional evaluation of your electrical needs and requirements</p>
+                    </div>
+                    
+                    <div class="guide-option">
+                        <h4><i class="fas fa-cogs"></i> Professional Installation</h4>
+                        <p>EPRA-certified electricians using quality materials and tools</p>
+                    </div>
+                    
+                    <div class="guide-option">
+                        <h4><i class="fas fa-file-certificate"></i> Compliance Certification</h4>
+                        <p>Complete testing and issuance of Certificate of Compliance</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <a href="#inquiry" class="btn" style="background-color: var(--primary); color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block;">
+                        <i class="fas fa-calendar-check"></i> Schedule Free Assessment
+                    </a>
+                    <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 15px;">
+                        Call for immediate consultation: <strong>+254 705 059 964</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Electrical Installation Inquiry Form -->
+    <div class="container">
+        <div class="form-header" id="inquiry">
+            <h1 class="section-title">Get Your Electrical Installation Quote</h1>
+            <p class="section-description">Fill this simple form and receive a personalized quote for your electrical needs within 2 hours</p>
+        </div>
+        
+        <div class="form-container">
+            <!-- Left Sidebar - FAQs -->
+            <div class="form-sidebar">
+                <div class="sidebar-content">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="logo-text">Electrical FAQs</div>
+                    </div>
+                    
+                    <div class="faq-section">
+                        <h3><i class="fas fa-question-circle"></i> Electrical Installation FAQs</h3>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                How long does electrical wiring take?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Most residential wiring projects take 3-7 days. New construction wiring may take 1-3 weeks depending on property size and complexity.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Do you provide NEMA/EPRA compliance certificates?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! All our installations come with full compliance certificates and meet Kenya Bureau of Standards requirements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Is the site survey fee refundable?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>100% refundable! The site survey fee is deducted from your final installation cost if you proceed with our services.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What's your warranty period?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We offer:</p>
+                                <ul>
+                                    <li>5-year workmanship warranty</li>
+                                    <li>1-year free maintenance</li>
+                                    <li>Lifetime technical support</li>
+                                    <li>Compliance certificate guarantee</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Do you handle permit applications?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! We handle all NEMA, EPRA, and county government permit applications at no extra cost.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                What safety standards do you follow?
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We strictly follow IEEE standards, Kenya Bureau of Standards regulations, and international electrical safety codes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side - Form Content -->
+            <div class="form-content">
+                <!-- Progress Indicator -->
+                <div class="progress-indicator">
+                    <div class="progress-steps">
+                        <div class="progress-step active">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Contact</div>
+                        </div>
+                        <div class="progress-step">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Project</div>
+                        </div>
+                        <div class="progress-step">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Review</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 33%"></div>
+                    </div>
+                </div>
+                
+                <!-- Electrical Installation Form -->
+                <form id="electricalInstallationForm">
+                    <!-- Section 1: Contact Information -->
+                    <div class="form-section active" id="section-contact">
+                        <div class="section-label">
+                            <i class="fas fa-user"></i>
+                            <span>Your Contact Information</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fullName">
+                                <i class="fas fa-signature"></i>
+                                Full Name *
+                            </label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mobile">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    Mobile Number *
+                                </label>
+                                <input type="tel" id="mobile" class="form-control" placeholder="07XX XXX XXX" required>
+                                <small class="form-hint">We'll call this number</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email (Optional)
+                                </label>
+                                <input type="email" id="email" class="form-control" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group county-autocomplete">
+                            <label for="county">
+                                <i class="fas fa-map-marker-alt"></i>
+                                County / Location *
+                            </label>
+                            <input type="text" id="county" class="form-control" placeholder="Start typing your county..." required autocomplete="off">
+                            <div class="autocomplete-list" id="countyList"></div>
+                            <small class="form-hint">We'll show site survey fee based on location</small>
+                        </div>
+                        
+                        <!-- Site Survey Fee Display -->
+                        <div class="survey-fee-display" id="surveyFeeDisplay">
+                            <div class="survey-fee-header">
+                                <h5><i class="fas fa-clipboard-check"></i> Professional Site Survey Required</h5>
+                                <div class="survey-fee-amount" id="surveyFeeAmount">Ksh 0</div>
+                            </div>
+                            <div class="survey-fee-details">
+                                <p><i class="fas fa-check-circle" style="color: var(--success);"></i> <strong>100% Refundable</strong> if you proceed with installation</p>
+                                <p><i class="fas fa-check-circle" style="color: var(--success);"></i> Deducted from your final installation cost</p>
+                                <p><i class="fas fa-check-circle" style="color: var(--success);"></i> Includes load assessment & wiring diagram</p>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="submit-btn" onclick="validateContactSection()">
+                            Next: Project Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Section 2: Project Details -->
+                    <div class="form-section" id="section-project">
+                        <div class="section-label">
+                            <i class="fas fa-bolt"></i>
+                            <span>What Electrical Work Do You Need?</span>
+                        </div>
+                        
+                        <!-- Service Selection -->
+                        <div class="form-group">
+                            <label>
+                                <i class="fas fa-check-circle"></i>
+                                Select Service(s) *
+                            </label>
+                            <div class="service-checkboxes">
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="wiring" id="serviceWiring" onchange="handleServiceSelection('wiring')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-wrench"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>House Wiring</strong>
+                                            <span>Complete electrical wiring</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="rewiring" id="serviceRewiring" onchange="handleServiceSelection('rewiring')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-tools"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Rewiring</strong>
+                                            <span>Upgrade old wiring</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="db" id="serviceDB" onchange="handleServiceSelection('db')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-server"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Distribution Board</strong>
+                                            <span>DB installation/upgrade</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="lighting" id="serviceLighting" onchange="handleServiceSelection('lighting')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Lighting Installation</strong>
+                                            <span>Indoor/outdoor lighting</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="sockets" id="serviceSockets" onchange="handleServiceSelection('sockets')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-plug"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Socket Installation</strong>
+                                            <span>Power points & outlets</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="earthing" id="serviceEarthing" onchange="handleServiceSelection('earthing')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Earthing & Bonding</strong>
+                                            <span>Electrical safety systems</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="three-phase" id="serviceThreePhase" onchange="handleServiceSelection('three-phase')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-industry"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Three-Phase Power</strong>
+                                            <span>Commercial/industrial</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-checkbox">
+                                    <input type="checkbox" name="services" value="inspection" id="serviceInspection" onchange="handleServiceSelection('inspection')">
+                                    <div class="service-option">
+                                        <div class="service-icon">
+                                            <i class="fas fa-clipboard-check"></i>
+                                        </div>
+                                        <div class="service-text">
+                                            <strong>Electrical Inspection</strong>
+                                            <span>Safety audit & certification</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Dynamic Questions (Max 5 per service) -->
+                        <div class="dynamic-questions" id="dynamicQuestions">
+                            <!-- Questions will appear here based on selected services -->
+                        </div>
+                        
+                        <!-- Optional Details -->
+                        <div class="optional-toggle">
+                            <input type="checkbox" id="showOptional" onchange="toggleOptionalDetails()">
+                            <label for="showOptional">
+                                <i class="fas fa-plus-circle"></i>
+                                Add more details for accurate quote (Optional)
+                            </label>
+                        </div>
+                        
+                        <div class="optional-details" id="optionalDetails">
+                            <div class="form-group">
+                                <label>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Project Timeline
+                                </label>
+                                <div class="option-buttons">
+                                    <button type="button" class="option-btn" data-value="immediate">Immediate</button>
+                                    <button type="button" class="option-btn" data-value="1week">Within 1 Week</button>
+                                    <button type="button" class="option-btn active" data-value="1month">Within 1 Month</button>
+                                    <button type="button" class="option-btn" data-value="planning">Just Planning</button>
+                                </div>
+                                <input type="hidden" id="timeline" value="1month">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    <i class="fas fa-building"></i>
+                                    Property Type
+                                </label>
+                                <div class="option-buttons">
+                                    <button type="button" class="option-btn" data-value="residential">Residential</button>
+                                    <button type="button" class="option-btn active" data-value="commercial">Commercial</button>
+                                    <button type="button" class="option-btn" data-value="industrial">Industrial</button>
+                                    <button type="button" class="option-btn" data-value="institutional">Institutional</button>
+                                </div>
+                                <input type="hidden" id="propertyType" value="commercial">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    <i class="fas fa-coins"></i>
+                                    Budget Expectations
+                                </label>
+                                <div class="option-buttons">
+                                    <button type="button" class="option-btn budget-btn" data-value="economy">Economy</button>
+                                    <button type="button" class="option-btn budget-btn active" data-value="standard">Standard</button>
+                                    <button type="button" class="option-btn budget-btn" data-value="premium">Premium</button>
+                                    <button type="button" class="option-btn budget-btn" data-value="advice">Need Advice</button>
+                                </div>
+                                <input type="hidden" id="budget" value="standard">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="button" class="submit-btn btn-secondary" onclick="prevSection('contact')">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button type="button" class="submit-btn" onclick="validateProjectSection()">
+                                Next: Review & Submit <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 3: Review & Submit -->
+                    <div class="form-section" id="section-review">
+                        <div class="section-label">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Review & Submit</span>
+                        </div>
+                        
+                        <div class="review-summary" id="reviewSummary" style="
+                            background-color: rgba(33, 150, 243, 0.05);
+                            border-radius: 12px;
+                            padding: 20px;
+                            margin-bottom: 25px;
+                            border-left: 4px solid var(--primary);
+                        ">
+                            <!-- Summary will appear here -->
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additionalNotes">
+                                <i class="fas fa-edit"></i>
+                                Additional Notes (Optional)
+                            </label>
+                            <textarea id="additionalNotes" class="form-control" placeholder="Any special requirements, existing electrical issues, or additional information..." rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="agreeTerms" required>
+                                <label for="agreeTerms">
+                                    I agree to receive a call/WhatsApp message for quotation discussion
+                                </label>
+                            </div>
+                            
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="understandSurvey">
+                                <label for="understandSurvey">
+                                    I understand a professional site survey may be required (fee applicable)
+                                </label>
+                            </div>
+                            
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="needPermits">
+                                <label for="needPermits">
+                                    I need help with NEMA/EPRA permit applications
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="preference-select">
+                            <p><i class="fas fa-comments"></i> Preferred contact method:</p>
+                            <div class="preference-options">
+                                <label class="preference-option">
+                                    <input type="radio" name="contactMethod" value="whatsapp" checked>
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </label>
+                                <label class="preference-option">
+                                    <input type="radio" name="contactMethod" value="call">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Phone Call</span>
+                                </label>
+                                <label class="preference-option">
+                                    <input type="radio" name="contactMethod" value="email">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="button" class="submit-btn btn-secondary" onclick="prevSection('project')">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Submit Quote Request
+                            </button>
+                        </div>
+                        
+                        <p class="form-footer">
+                            <i class="fas fa-lock"></i>
+                            Your information is secure and will only be used to prepare your electrical installation quotation.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rosanatech Footer -->
+    <footer id="rosanatech-footer">
+        <div class="rtech-footer-container">
+            <div class="rtech-footer-content">
+                <div class="rtech-footer-columns">
+                    <!-- Column 1 -->
+                    <div class="rtech-footer-column">
+                        <a href="#" class="rtech-footer-logo">Rosanatech</a>
+                        <p class="rtech-company-description">
+                            Rosanatech Solutions is a premier electrical, solar, smart home, and construction company in Nairobi, Kenya—delivering reliable solutions in power systems, solar installations, building works, automation, security systems, and maintenance.
+                        </p>
+                        <div class="rtech-social-icons">
+                            <a href="https://web.facebook.com/profile.php?id=61569216960441" class="rtech-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/RosanatechX" class="rtech-social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@rosanatech_solutions" class="rtech-social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://whatsapp.com/channel/0029VbBuYBWBFLgU7OT5BZ3z" class="rtech-social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/company/rosanatech-solutions/?viewAsMember=true" class="rtech-social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="rtech-newsletter" style="display: none;">
+                            <h4>Stay Updated</h4>
+                            <div class="rtech-newsletter-form">
+                                <input type="email" class="rtech-newsletter-input" placeholder="Your email address">
+                                <button class="rtech-newsletter-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Quick Links</h3>
+                        <ul class="rtech-footer-links">
+                            <li><a href="#"><i class="fas fa-home fa-xs"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-info-circle fa-xs"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-cogs fa-xs"></i> Services</a></li>
+                            <li><a href="#"><i class="fas fa-project-diagram fa-xs"></i> Projects</a></li>
+                            <li><a href="#"><i class="fas fa-blog fa-xs"></i> Blog / Resources</a></li>
+                            <li><a href="#"><i class="fas fa-envelope fa-xs"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Company Information</h3>
+                        <ul class="rtech-footer-links">
+                            <li><a href="#"><i class="fas fa-building fa-xs"></i> Corporate Information</a></li>
+                            <li><a href="#"><i class="fas fa-gavel fa-xs"></i> Governance & Compliance</a></li>
+                            <li><a href="#"><i class="fas fa-boxes fa-xs"></i> Company Resources</a></li>
+                            <li><a href="#"><i class="fas fa-briefcase fa-xs"></i> Corporate Affairs</a></li>
+                            <li><a href="#"><i class="fas fa-users-cog fa-xs"></i> Administration</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt fa-xs"></i> Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Contact Info</h3>
+                        <ul class="rtech-contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Nairobi, Kenya</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@rosanatechsolutions.co.ke</span></li>
+                            <li><i class="fas fa-phone"></i><span>+254 114 060 735</span></li>
+                            <li><i class="fas fa-clock"></i><span>Mon–Sat 8:00 AM – 6:00 PM</span></li>
+                            <li><i class="fas fa-phone-volume"></i><span>Emergency: +254 705 059 964</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="rtech-footer-bottom">
+                <div class="rtech-footer-bottom-content">
+                    <div class="rtech-copyright">© 2026 Rosanatech Solutions. All rights reserved.</div>
+                    <div class="rtech-developer">Made by <a href="#">PresenceLab Digital Solutions</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="rtech-back-to-top" id="rtechBackToTop" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+    
+    <!-- Services Filtering Script -->
+    <script>
+        // Services Filtering
+        function filterServices(category) {
+            // Update active tab
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Filter service cards
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = 'flex';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+        
+        // Service link click handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceLinks = document.querySelectorAll('.service-link');
+            serviceLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const serviceName = this.getAttribute('data-service');
+                    localStorage.setItem('selectedElectricalService', serviceName);
+                    
+                    // Redirect to inquiry form or show modal
+                    alert(`Thank you for your interest in ${serviceName}! Our team will contact you shortly.`);
+                    // In production: window.location.href = 'quote.html?service=' + encodeURIComponent(serviceName);
+                });
+            });
+            
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    const icon = this.querySelector('i');
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    </script>
+
+    <!--client intake form -->
+    <script>
+
+        // Ensure electrical form has the correct action and method
+document.getElementById('electricalInstallationForm').setAttribute('action', 'https://formbold.com/s/6lEYp');
+document.getElementById('electricalInstallationForm').setAttribute('method', 'POST');
+        // County Data for Autocomplete
+        const countiesData = [
+            { name: "Nairobi County", fee: 2500 },
+            { name: "Mombasa County", fee: 3000 },
+            { name: "Kiambu County", fee: 2500 },
+            { name: "Nakuru County", fee: 3000 },
+            { name: "Kisumu County", fee: 3500 },
+            { name: "Uasin Gishu County", fee: 4000 },
+            { name: "Machakos County", fee: 3000 },
+            { name: "Meru County", fee: 3500 },
+            { name: "Kakamega County", fee: 4000 },
+            { name: "Kisii County", fee: 4000 },
+            { name: "Nyeri County", fee: 3000 },
+            { name: "Kilifi County", fee: 5000 },
+            { name: "Bungoma County", fee: 4000 },
+            { name: "Narok County", fee: 4500 },
+            { name: "Garissa County", fee: 6000 },
+            { name: "Isiolo County", fee: 6000 },
+            { name: "Lamu County", fee: 7000 }
+        ];
+
+        // Service Questions Data - Max 5 questions per service
+        const serviceQuestions = {
+            'wiring': [
+                {
+                    question: "What is the property size (square meters)?",
+                    type: "select",
+                    options: [
+                        { value: "under50", label: "Under 50 sq.m (Studio)" },
+                        { value: "50-100", label: "50-100 sq.m (1-2 bedroom)" },
+                        { value: "100-200", label: "100-200 sq.m (3-4 bedroom)" },
+                        { value: "200-400", label: "200-400 sq.m (Large house)" },
+                        { value: "over400", label: "Over 400 sq.m (Mansion)" }
+                    ],
+                    field: "propertySize"
+                },
+                {
+                    question: "Number of rooms to be wired?",
+                    type: "select",
+                    options: [
+                        { value: "1-3", label: "1-3 rooms" },
+                        { value: "4-6", label: "4-6 rooms" },
+                        { value: "7-10", label: "7-10 rooms" },
+                        { value: "11-15", label: "11-15 rooms" },
+                        { value: "16+", label: "16+ rooms" }
+                    ],
+                    field: "roomCount"
+                },
+                {
+                    question: "Type of wiring required?",
+                    type: "select",
+                    options: [
+                        { value: "surface", label: "Surface wiring" },
+                        { value: "concealed", label: "Concealed wiring" },
+                        { value: "both", label: "Both surface & concealed" },
+                        { value: "advice", label: "Need expert advice" }
+                    ],
+                    field: "wiringType"
+                },
+                {
+                    question: "Do you need wiring for heavy appliances?",
+                    type: "checkbox",
+                    options: [
+                        { value: "water-heater", label: "Water heater" },
+                        { value: "ac", label: "Air conditioner" },
+                        { value: "cooker", label: "Electric cooker" },
+                        { value: "washer", label: "Washing machine" },
+                        { value: "other", label: "Other heavy appliances" }
+                    ],
+                    field: "heavyAppliances"
+                },
+                {
+                    question: "Is this for new construction or existing building?",
+                    type: "select",
+                    options: [
+                        { value: "new", label: "New construction" },
+                        { value: "existing", label: "Existing building" },
+                        { value: "extension", label: "Building extension" },
+                        { value: "renovation", label: "Renovation project" }
+                    ],
+                    field: "constructionType"
+                }
+            ],
+            'rewiring': [
+                {
+                    question: "Age of current electrical system?",
+                    type: "select",
+                    options: [
+                        { value: "under5", label: "Under 5 years" },
+                        { value: "5-10", label: "5-10 years" },
+                        { value: "10-20", label: "10-20 years" },
+                        { value: "20+", label: "Over 20 years" },
+                        { value: "unknown", label: "Not sure" }
+                    ],
+                    field: "systemAge"
+                },
+                {
+                    question: "Current electrical issues?",
+                    type: "checkbox",
+                    options: [
+                        { value: "tripping", label: "Frequent circuit breaker tripping" },
+                        { value: "flickering", label: "Lights flickering" },
+                        { value: "overheating", label: "Overheating sockets/switches" },
+                        { value: "shocks", label: "Electric shocks" },
+                        { value: "burning", label: "Burning smell from wiring" }
+                    ],
+                    field: "currentIssues"
+                },
+                {
+                    question: "Do you have aluminum or copper wiring?",
+                    type: "select",
+                    options: [
+                        { value: "copper", label: "Copper wiring" },
+                        { value: "aluminum", label: "Aluminum wiring" },
+                        { value: "both", label: "Both types" },
+                        { value: "unknown", label: "Not sure" }
+                    ],
+                    field: "wireType"
+                },
+                {
+                    question: "Extent of rewiring needed?",
+                    type: "select",
+                    options: [
+                        { value: "partial", label: "Partial rewiring" },
+                        { value: "complete", label: "Complete rewiring" },
+                        { value: "specific", label: "Specific areas only" },
+                        { value: "assessment", label: "Need assessment first" }
+                    ],
+                    field: "rewiringExtent"
+                },
+                {
+                    question: "Do you need to maintain power during rewiring?",
+                    type: "select",
+                    options: [
+                        { value: "yes", label: "Yes, maintain partial power" },
+                        { value: "no", label: "No, power can be off" },
+                        { value: "critical", label: "Critical areas need power" },
+                        { value: "unsure", label: "Not sure" }
+                    ],
+                    field: "powerDuringWork"
+                }
+            ],
+            'db': [
+                {
+                    question: "Current DB type?",
+                    type: "select",
+                    options: [
+                        { value: "single-phase", label: "Single-phase DB" },
+                        { value: "three-phase", label: "Three-phase DB" },
+                        { value: "old-fuse", label: "Old fuse box" },
+                        { value: "none", label: "No existing DB" }
+                    ],
+                    field: "currentDB"
+                },
+                {
+                    question: "Number of circuits needed?",
+                    type: "select",
+                    options: [
+                        { value: "1-5", label: "1-5 circuits" },
+                        { value: "6-10", label: "6-10 circuits" },
+                        { value: "11-20", label: "11-20 circuits" },
+                        { value: "21+", label: "21+ circuits" },
+                        { value: "assessment", label: "Need assessment" }
+                    ],
+                    field: "circuitCount"
+                },
+                {
+                    question: "Do you need RCD/RCBO protection?",
+                    type: "select",
+                    options: [
+                        { value: "yes-all", label: "Yes, on all circuits" },
+                        { value: "yes-critical", label: "Yes, on critical circuits" },
+                        { value: "no", label: "No" },
+                        { value: "advice", label: "Need advice" }
+                    ],
+                    field: "rcdProtection"
+                },
+                {
+                    question: "DB location preference?",
+                    type: "select",
+                    options: [
+                        { value: "indoor", label: "Indoor installation" },
+                        { value: "outdoor", label: "Outdoor installation" },
+                        { value: "garage", label: "Garage/shed" },
+                        { value: "specific", label: "Specific location" }
+                    ],
+                    field: "dbLocation"
+                },
+                {
+                    question: "Do you need surge protection?",
+                    type: "select",
+                    options: [
+                        { value: "yes", label: "Yes, surge protection needed" },
+                        { value: "no", label: "No" },
+                        { value: "maybe", label: "Not sure" },
+                        { value: "advice", label: "Need expert advice" }
+                    ],
+                    field: "surgeProtection"
+                }
+            ],
+            'lighting': [
+                {
+                    question: "Type of lighting installation?",
+                    type: "checkbox",
+                    options: [
+                        { value: "indoor", label: "Indoor lighting" },
+                        { value: "outdoor", label: "Outdoor lighting" },
+                        { value: "security", label: "Security lighting" },
+                        { value: "garden", label: "Garden/landscape lighting" },
+                        { value: "emergency", label: "Emergency lighting" }
+                    ],
+                    field: "lightingTypes"
+                },
+                {
+                    question: "Number of lighting points needed?",
+                    type: "select",
+                    options: [
+                        { value: "1-10", label: "1-10 points" },
+                        { value: "11-20", label: "11-20 points" },
+                        { value: "21-30", label: "21-30 points" },
+                        { value: "31-50", label: "31-50 points" },
+                        { value: "51+", label: "51+ points" }
+                    ],
+                    field: "lightPoints"
+                },
+                {
+                    question: "Lighting control preference?",
+                    type: "select",
+                    options: [
+                        { value: "manual", label: "Manual switches" },
+                        { value: "dimmer", label: "Dimmer switches" },
+                        { value: "motion", label: "Motion sensors" },
+                        { value: "smart", label: "Smart home control" },
+                        { value: "mixed", label: "Mixed controls" }
+                    ],
+                    field: "lightingControl"
+                },
+                {
+                    question: "LED or conventional lighting?",
+                    type: "select",
+                    options: [
+                        { value: "led", label: "LED lighting" },
+                        { value: "conventional", label: "Conventional lighting" },
+                        { value: "both", label: "Mix of both" },
+                        { value: "advice", label: "Need advice" }
+                    ],
+                    field: "lightingType"
+                },
+                {
+                    question: "Do you need emergency/backup lighting?",
+                    type: "select",
+                    options: [
+                        { value: "yes", label: "Yes, emergency lighting required" },
+                        { value: "no", label: "No" },
+                        { value: "critical", label: "Critical areas only" },
+                        { value: "maybe", label: "Considering it" }
+                    ],
+                    field: "emergencyLighting"
+                }
+            ],
+            'sockets': [
+                {
+                    question: "Number of socket outlets needed?",
+                    type: "select",
+                    options: [
+                        { value: "1-10", label: "1-10 sockets" },
+                        { value: "11-20", label: "11-20 sockets" },
+                        { value: "21-30", label: "21-30 sockets" },
+                        { value: "31-50", label: "31-50 sockets" },
+                        { value: "51+", label: "51+ sockets" }
+                    ],
+                    field: "socketCount"
+                },
+                {
+                    question: "Socket types needed?",
+                    type: "checkbox",
+                    options: [
+                        { value: "standard", label: "Standard 3-pin sockets" },
+                        { value: "usb", label: "USB sockets" },
+                        { value: "heavy", label: "Heavy duty sockets" },
+                        { value: "special", label: "Special purpose sockets" },
+                        { value: "international", label: "International sockets" }
+                    ],
+                    field: "socketTypes"
+                },
+                {
+                    question: "Socket locations?",
+                    type: "checkbox",
+                    options: [
+                        { value: "living", label: "Living room" },
+                        { value: "bedroom", label: "Bedrooms" },
+                        { value: "kitchen", label: "Kitchen" },
+                        { value: "bathroom", label: "Bathrooms" },
+                        { value: "outdoor", label: "Outdoor areas" }
+                    ],
+                    field: "socketLocations"
+                },
+                {
+                    question: "Do you need dedicated circuits for appliances?",
+                    type: "select",
+                    options: [
+                        { value: "yes", label: "Yes, dedicated circuits" },
+                        { value: "no", label: "No" },
+                        { value: "some", label: "Some appliances" },
+                        { value: "advice", label: "Need advice" }
+                    ],
+                    field: "dedicatedCircuits"
+                },
+                {
+                    question: "Socket height preference?",
+                    type: "select",
+                    options: [
+                        { value: "standard", label: "Standard height" },
+                        { value: "higher", label: "Higher than standard" },
+                        { value: "lower", label: "Lower than standard" },
+                        { value: "mixed", label: "Mixed heights" },
+                        { value: "advice", label: "Need expert advice" }
+                    ],
+                    field: "socketHeight"
+                }
+            ],
+            'earthing': [
+                {
+                    question: "Current earthing system status?",
+                    type: "select",
+                    options: [
+                        { value: "none", label: "No earthing system" },
+                        { value: "old", label: "Old/damaged earthing" },
+                        { value: "partial", label: "Partial earthing" },
+                        { value: "unknown", label: "Not sure" }
+                    ],
+                    field: "currentEarthing"
+                },
+                {
+                    question: "Property size for earthing?",
+                    type: "select",
+                    options: [
+                        { value: "small", label: "Small property" },
+                        { value: "medium", label: "Medium property" },
+                        { value: "large", label: "Large property" },
+                        { value: "commercial", label: "Commercial property" }
+                    ],
+                    field: "propertySizeEarthing"
+                },
+                {
+                    question: "Soil type in your area?",
+                    type: "select",
+                    options: [
+                        { value: "clay", label: "Clay soil" },
+                        { value: "sandy", label: "Sandy soil" },
+                        { value: "rocky", label: "Rocky soil" },
+                        { value: "unknown", label: "Not sure" }
+                    ],
+                    field: "soilType"
+                },
+                {
+                    question: "Do you need lightning protection?",
+                    type: "select",
+                    options: [
+                        { value: "yes", label: "Yes, lightning protection" },
+                        { value: "no", label: "No" },
+                        { value: "maybe", label: "Considering it" },
+                        { value: "advice", label: "Need advice" }
+                    ],
+                    field: "lightningProtection"
+                },
+                {
+                    question: "Certification requirements?",
+                    type: "select",
+                    options: [
+                        { value: "full", label: "Full compliance certificate" },
+                        { value: "partial", label: "Partial certification" },
+                        { value: "inspection", label: "Inspection only" },
+                        { value: "advice", label: "Need advice" }
+                    ],
+                    field: "certification"
+                }
+            ],
+            'three-phase': [
+                {
+                    question: "Current power supply?",
+                    type: "select",
+                    options: [
+                        { value: "single-phase", label: "Single-phase" },
+                        { value: "three-phase", label: "Already three-phase" },
+                        { value: "none", label: "No power connection" },
+                        { value: "generator", label: "Generator only" }
+                    ],
+                    field: "currentSupply"
+                },
+                {
+                    question: "Purpose of three-phase power?",
+                    type: "select",
+                    options: [
+                        { value: "industrial", label: "Industrial machinery" },
+                        { value: "commercial", label: "Commercial equipment" },
+                        { value: "heavy-appliances", label: "Heavy home appliances" },
+                        { value: "future-proofing", label: "Future-proofing" }
+                    ],
+                    field: "threePhasePurpose"
+                },
+                {
+                    question: "Estimated power load (kVA)?",
+                    type: "select",
+                    options: [
+                        { value: "under20", label: "Under 20 kVA" },
+                        { value: "20-50", label: "20-50 kVA" },
+                        { value: "50-100", label: "50-100 kVA" },
+                        { value: "100+", label: "100+ kVA" },
+                        { value: "unknown", label: "Not sure" }
+                    ],
+                    field: "powerLoad"
+                },
+                {
+                    question: "Do you need KPLC application assistance?",
+                    type: "select",
+                    options: [
+                        { value: "yes", label: "Yes, full assistance" },
+                        { value: "partial", label: "Partial assistance" },
+                        { value: "no", label: "No, I'll handle it" },
+                        { value: "advice", label: "Need advice" }
+                    ],
+                    field: "kplcAssistance"
+                },
+                {
+                    question: "Installation timeline?",
+                    type: "select",
+                    options: [
+                        { value: "urgent", label: "Urgent (within 2 weeks)" },
+                        { value: "1month", label: "Within 1 month" },
+                        { value: "2-3months", label: "2-3 months" },
+                        { value: "flexible", label: "Flexible" }
+                    ],
+                    field: "threePhaseTimeline"
+                }
+            ],
+            'inspection': [
+                {
+                    question: "Type of inspection needed?",
+                    type: "select",
+                    options: [
+                        { value: "safety", label: "Safety inspection" },
+                        { value: "compliance", label: "Compliance inspection" },
+                        { value: "pre-purchase", label: "Pre-purchase inspection" },
+                        { value: "insurance", label: "Insurance inspection" },
+                        { value: "periodic", label: "Periodic maintenance check" }
+                    ],
+                    field: "inspectionType"
+                },
+                {
+                    question: "Property age?",
+                    type: "select",
+                    options: [
+                        { value: "new", label: "New construction" },
+                        { value: "1-5", label: "1-5 years old" },
+                        { value: "5-10", label: "5-10 years old" },
+                        { value: "10-20", label: "10-20 years old" },
+                        { value: "20+", label: "20+ years old" }
+                    ],
+                    field: "propertyAge"
+                },
+                {
+                    question: "Current electrical issues?",
+                    type: "checkbox",
+                    options: [
+                        { value: "tripping", label: "Circuit breaker tripping" },
+                        { value: "flickering", label: "Light flickering" },
+                        { value: "shocks", label: "Electric shocks" },
+                        { value: "overheating", label: "Overheating" },
+                        { value: "none", label: "No known issues" }
+                    ],
+                    field: "inspectionIssues"
+                },
+                {
+                    question: "Do you need certification?",
+                    type: "select",
+                    options: [
+                        { value: "yes", label: "Yes, formal certificate" },
+                        { value: "no", label: "No, just report" },
+                        { value: "maybe", label: "Maybe" },
+                        { value: "advice", label: "Need advice" }
+                    ],
+                    field: "needCertification"
+                },
+                {
+                    question: "Urgency of inspection?",
+                    type: "select",
+                    options: [
+                        { value: "urgent", label: "Urgent (within 48 hours)" },
+                        { value: "soon", label: "Soon (within 1 week)" },
+                        { value: "normal", label: "Normal (within 2 weeks)" },
+                        { value: "flexible", label: "Flexible schedule" }
+                    ],
+                    field: "inspectionUrgency"
+                }
+            ]
+        };
+
+        // Initialize FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+
+        // County Autocomplete
+        const countyInput = document.getElementById('county');
+        const countyList = document.getElementById('countyList');
+        const surveyFeeDisplay = document.getElementById('surveyFeeDisplay');
+        const surveyFeeAmount = document.getElementById('surveyFeeAmount');
+
+        countyInput.addEventListener('input', function() {
+            const value = this.value.toLowerCase();
+            countyList.innerHTML = '';
+            
+            if (value.length > 1) {
+                const matches = countiesData.filter(county => 
+                    county.name.toLowerCase().includes(value)
+                );
+                
+                if (matches.length > 0) {
+                    countyList.classList.add('active');
+                    matches.forEach(county => {
+                        const item = document.createElement('div');
+                        item.className = 'autocomplete-item';
+                        item.innerHTML = `
+                            <span class="county-name">${county.name}</span>
+                            <span class="survey-fee">Ksh ${county.fee.toLocaleString()}</span>
+                        `;
+                        
+                        item.addEventListener('click', function() {
+                            countyInput.value = county.name;
+                            countyList.classList.remove('active');
+                            
+                            // Update survey fee display
+                            surveyFeeDisplay.classList.add('active');
+                            surveyFeeAmount.textContent = `Ksh ${county.fee.toLocaleString()}`;
+                        });
+                        
+                        countyList.appendChild(item);
+                    });
+                } else {
+                    countyList.classList.remove('active');
+                }
+            } else {
+                countyList.classList.remove('active');
+            }
+        });
+
+        // Close autocomplete when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!countyInput.contains(e.target) && !countyList.contains(e.target)) {
+                countyList.classList.remove('active');
+            }
+        });
+
+        // Handle Service Selection
+        function handleServiceSelection(service) {
+            const checkbox = document.getElementById(`service${service.charAt(0).toUpperCase() + service.slice(1)}`);
+            const dynamicQuestions = document.getElementById('dynamicQuestions');
+            
+            // Clear previous questions
+            dynamicQuestions.innerHTML = '';
+            
+            // Get all selected services
+            const selectedServices = Array.from(document.querySelectorAll('input[name="services"]:checked'))
+                .map(cb => cb.value);
+            
+            // Show questions for each selected service
+            selectedServices.forEach(selectedService => {
+                if (serviceQuestions[selectedService]) {
+                    const questions = serviceQuestions[selectedService];
+                    
+                    // Create service question section
+                    const serviceSection = document.createElement('div');
+                    serviceSection.className = 'service-questions';
+                    
+                    // Add service title
+                    const title = document.createElement('h4');
+                    title.innerHTML = `<i class="fas fa-${getServiceIcon(selectedService)}"></i> ${getServiceName(selectedService)} Questions`;
+                    serviceSection.appendChild(title);
+                    
+                    // Add questions (max 5)
+                    questions.slice(0, 5).forEach((q, index) => {
+                        const questionGroup = document.createElement('div');
+                        questionGroup.className = 'form-group';
+                        
+                        const label = document.createElement('label');
+                        label.innerHTML = `<i class="fas fa-question-circle"></i> ${q.question}`;
+                        
+                        questionGroup.appendChild(label);
+                        
+                        if (q.type === 'select') {
+                            const select = document.createElement('select');
+                            select.className = 'form-control';
+                            select.name = `${selectedService}_${q.field}`;
+                            select.required = true;
+                            
+                            // Add default option
+                            const defaultOption = document.createElement('option');
+                            defaultOption.value = '';
+                            defaultOption.textContent = 'Please select an option';
+                            select.appendChild(defaultOption);
+                            
+                            // Add options
+                            q.options.forEach(option => {
+                                const opt = document.createElement('option');
+                                opt.value = option.value;
+                                opt.textContent = option.label;
+                                select.appendChild(opt);
+                            });
+                            
+                            questionGroup.appendChild(select);
+                        } else if (q.type === 'checkbox') {
+                            const checkboxContainer = document.createElement('div');
+                            checkboxContainer.className = 'option-buttons';
+                            
+                            q.options.forEach(option => {
+                                const btn = document.createElement('button');
+                                btn.type = 'button';
+                                btn.className = 'option-btn';
+                                btn.textContent = option.label;
+                                btn.dataset.value = option.value;
+                                btn.dataset.field = `${selectedService}_${q.field}`;
+                                
+                                btn.addEventListener('click', function() {
+                                    // Toggle active state
+                                    this.classList.toggle('active');
+                                    
+                                    // Update hidden input
+                                    const hiddenInput = document.getElementById(`${selectedService}_${q.field}_hidden`);
+                                    if (hiddenInput) {
+                                        const values = hiddenInput.value.split(',').filter(v => v);
+                                        if (this.classList.contains('active')) {
+                                            if (!values.includes(this.dataset.value)) {
+                                                values.push(this.dataset.value);
+                                            }
+                                        } else {
+                                            const index = values.indexOf(this.dataset.value);
+                                            if (index > -1) {
+                                                values.splice(index, 1);
+                                            }
+                                        }
+                                        hiddenInput.value = values.join(',');
+                                    }
+                                });
+                                
+                                checkboxContainer.appendChild(btn);
+                            });
+                            
+                            // Add hidden input to store values
+                            const hiddenInput = document.createElement('input');
+                            hiddenInput.type = 'hidden';
+                            hiddenInput.id = `${selectedService}_${q.field}_hidden`;
+                            hiddenInput.name = `${selectedService}_${q.field}`;
+                            
+                            questionGroup.appendChild(checkboxContainer);
+                            questionGroup.appendChild(hiddenInput);
+                        }
+                        
+                        serviceSection.appendChild(questionGroup);
+                    });
+                    
+                    dynamicQuestions.appendChild(serviceSection);
+                }
+            });
+        }
+
+        // Helper functions
+        function getServiceIcon(service) {
+            const icons = {
+                'wiring': 'wrench',
+                'rewiring': 'tools',
+                'db': 'server',
+                'lighting': 'lightbulb',
+                'sockets': 'plug',
+                'earthing': 'shield-alt',
+                'three-phase': 'industry',
+                'inspection': 'clipboard-check'
+            };
+            return icons[service] || 'question-circle';
+        }
+
+        function getServiceName(service) {
+            const names = {
+                'wiring': 'House Wiring',
+                'rewiring': 'Rewiring',
+                'db': 'Distribution Board',
+                'lighting': 'Lighting Installation',
+                'sockets': 'Socket Installation',
+                'earthing': 'Earthing & Bonding',
+                'three-phase': 'Three-Phase Power',
+                'inspection': 'Electrical Inspection'
+            };
+            return names[service] || service;
+        }
+
+        // Option buttons functionality
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('option-btn') && !e.target.classList.contains('budget-btn')) {
+                const buttons = e.target.parentElement.querySelectorAll('.option-btn');
+                buttons.forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                const hiddenInput = e.target.parentElement.nextElementSibling;
+                if (hiddenInput && hiddenInput.type === 'hidden') {
+                    hiddenInput.value = e.target.dataset.value;
+                }
+            }
+            
+            if (e.target.classList.contains('budget-btn')) {
+                const buttons = e.target.parentElement.querySelectorAll('.budget-btn');
+                buttons.forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                const hiddenInput = e.target.parentElement.nextElementSibling;
+                if (hiddenInput && hiddenInput.type === 'hidden') {
+                    hiddenInput.value = e.target.dataset.value;
+                }
+            }
+        });
+
+        // Form Navigation
+        function validateContactSection() {
+            const name = document.getElementById('fullName').value;
+            const mobile = document.getElementById('mobile').value;
+            const county = document.getElementById('county').value;
+            
+            if (!name || !mobile || !county) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Validate mobile number format
+            const mobileRegex = /^(\+?254|0)[17]\d{8}$/;
+            if (!mobileRegex.test(mobile)) {
+                alert('Please enter a valid Kenyan mobile number (e.g., 0712345678 or 254712345678)');
+                return;
+            }
+            
+            // Show next section
+            showSection('project');
+            updateProgress(66);
+        }
+
+        function validateProjectSection() {
+            const selectedServices = Array.from(document.querySelectorAll('input[name="services"]:checked'));
+            
+            if (selectedServices.length === 0) {
+                alert('Please select at least one service');
+                return;
+            }
+            
+            // Validate service-specific questions
+            let allValid = true;
+            selectedServices.forEach(service => {
+                const serviceName = service.value;
+                const questions = document.querySelectorAll(`[name^="${serviceName}_"]`);
+                questions.forEach(q => {
+                    if (q.required && !q.value) {
+                        allValid = false;
+                    }
+                });
+            });
+            
+            if (!allValid) {
+                alert('Please answer all service-specific questions');
+                return;
+            }
+            
+            // Update review summary
+            updateReviewSummary();
+            
+            // Show next section
+            showSection('review');
+            updateProgress(100);
+        }
+
+        function showSection(sectionName) {
+            // Hide all sections
+            document.querySelectorAll('.form-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show target section
+            document.getElementById(`section-${sectionName}`).classList.add('active');
+        }
+
+        function prevSection(sectionName) {
+            showSection(sectionName);
+            updateProgress(sectionName === 'contact' ? 33 : 66);
+        }
+
+        function updateProgress(percentage) {
+            document.getElementById('progressFill').style.width = `${percentage}%`;
+            
+            // Update step indicators
+            const steps = document.querySelectorAll('.progress-step');
+            steps.forEach((step, index) => {
+                step.classList.remove('active');
+                if ((index === 0 && percentage >= 33) || 
+                    (index === 1 && percentage >= 66) || 
+                    (index === 2 && percentage >= 99)) {
+                    step.classList.add('active');
+                }
+            });
+        }
+
+        function toggleOptionalDetails() {
+            const details = document.getElementById('optionalDetails');
+            const checkbox = document.getElementById('showOptional');
+            if (checkbox.checked) {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function updateReviewSummary() {
+            const summary = document.getElementById('reviewSummary');
+            
+            // Collect all form data 
+            const formData = {
+                name: document.getElementById('fullName').value,
+                mobile: document.getElementById('mobile').value,
+                email: document.getElementById('email').value || 'Not provided',
+                county: document.getElementById('county').value,
+                services: [],
+                timeline: document.getElementById('timeline').value,
+                propertyType: document.getElementById('propertyType').value,
+                budget: document.getElementById('budget').value,
+                notes: document.getElementById('additionalNotes').value || 'None',
+                contactMethod: document.querySelector('input[name="contactMethod"]:checked').value,
+                needPermits: document.getElementById('needPermits').checked ? 'Yes' : 'No'
+            };
+            
+            // Get selected services
+            document.querySelectorAll('input[name="services"]:checked').forEach(checkbox => {
+                formData.services.push(getServiceName(checkbox.value));
+            });
+            
+            // Get site survey fee
+            let surveyFee = 0;
+            const selectedCounty = countiesData.find(county => county.name === formData.county);
+            if (selectedCounty) {
+                surveyFee = selectedCounty.fee;
+            }
+            
+            // Create summary HTML
+            let summaryHTML = `
+                <h4><i class="fas fa-file-alt"></i> Electrical Quote Request Summary</h4>
+                <div style="margin-top: 15px;">
+                    <p><strong>Contact Details:</strong><br>
+                    ${formData.name}<br>
+                    ${formData.mobile}<br>
+                    ${formData.email}<br>
+                    ${formData.county}</p>
+                    
+                    <p><strong>Selected Services:</strong><br>
+                    ${formData.services.join(', ')}</p>
+                    
+                    <p><strong>Property Type:</strong> ${getPropertyTypeLabel(formData.propertyType)}</p>
+                    <p><strong>Project Timeline:</strong> ${getTimelineLabel(formData.timeline)}</p>
+                    <p><strong>Budget Preference:</strong> ${getBudgetLabel(formData.budget)}</p>
+                    <p><strong>Need Permit Assistance:</strong> ${formData.needPermits}</p>
+                    <p><strong>Preferred Contact:</strong> ${formData.contactMethod}</p>
+                    
+                    ${surveyFee > 0 ? `<p><strong>Site Survey Fee:</strong> Ksh ${surveyFee.toLocaleString()} (100% refundable)</p>` : ''}
+                    
+                    ${formData.notes !== 'None' ? `<p><strong>Additional Notes:</strong><br>${formData.notes}</p>` : ''}
+                </div>
+            `;
+            
+            summary.innerHTML = summaryHTML;
+        }
+
+        function getTimelineLabel(value) {
+            const labels = {
+                'immediate': 'Immediate',
+                '1week': 'Within 1 Week',
+                '1month': 'Within 1 Month',
+                'planning': 'Just Planning'
+            };
+            return labels[value] || value;
+        }
+
+        function getPropertyTypeLabel(value) {
+            const labels = {
+                'residential': 'Residential',
+                'commercial': 'Commercial',
+                'industrial': 'Industrial',
+                'institutional': 'Institutional'
+            };
+            return labels[value] || value;
+        }
+
+        function getBudgetLabel(value) {
+            const labels = {
+                'economy': 'Economy',
+                'standard': 'Standard',
+                'premium': 'Premium',
+                'advice': 'Need Advice'
+            };
+            return labels[value] || value;
+        }
+
+        // Form submission
+       document.getElementById('electricalInstallationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    if (!document.getElementById('agreeTerms').checked) {
+        alert('Please agree to receive communication for your quote request.');
+        return;
+    }
+    
+    // Get all form data
+    const formData = new FormData(this);
+    
+    // Add the Formbold-specific subject for electrical
+    formData.append('_subject', 'New Electrical Installation Quote Request from Rosanatech');
+    
+    // Show your success modal
+    showSuccessModal();
+    
+    // Submit to Formbold in the background (electrical form)
+    fetch('https://formbold.com/s/6lEYp', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+    }).then(() => {
+        console.log('Electrical form submitted to Formbold successfully');
+    }).catch(error => {
+        console.error('Error submitting electrical form to Formbold:', error);
+    });
+});
+
+        // Success Modal Function
+        function showSuccessModal() {
+            // Create modal overlay
+            const modalOverlay = document.createElement('div');
+            modalOverlay.className = 'success-modal';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.className = 'success-modal-content';
+            
+            // Add success icon
+            const successIcon = document.createElement('div');
+            successIcon.style.cssText = `
+                width: 80px;
+                height: 80px;
+                background-color: var(--success);
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 25px;
+                font-size: 35px;
+            `;
+            successIcon.innerHTML = '<i class="fas fa-check"></i>';
+            
+            // Add message
+            const messageText = document.createElement('div');
+            messageText.style.cssText = `
+                color: var(--charcoal);
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 30px;
+                white-space: pre-line;
+            `;
+            
+            const name = document.getElementById('fullName').value;
+            const contactMethod = document.querySelector('input[name="contactMethod"]:checked').value;
+            
+            messageText.textContent = `Thank you ${name}!\n\n✅ Your electrical installation quote request has been submitted successfully.\n\nOur electrical expert will contact you via ${contactMethod} within 2 hours.\n\n📞 For immediate assistance, call: +254 705 059 964\n\n⚡ Remember: All our work comes with 5-year warranty and full compliance certificates!`;
+            
+            // Add action buttons
+            const buttonContainer = document.createElement('div');
+            buttonContainer.style.cssText = `
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+            `;
+            
+            const closeBtn = document.createElement('button');
+            closeBtn.style.cssText = `
+                background-color: var(--primary);
+                color: white;
+                border: none;
+                padding: 12px 30px;
+                border-radius: 30px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            `;
+            closeBtn.innerHTML = '<i class="fas fa-thumbs-up"></i> Great, Thank You!';
+            closeBtn.onmouseover = () => closeBtn.style.transform = 'translateY(-3px)';
+            closeBtn.onmouseout = () => closeBtn.style.transform = 'translateY(0)';
+            closeBtn.onclick = () => {
+                modalOverlay.remove();
+                // Reset form
+                document.getElementById('electricalInstallationForm').reset();
+                document.getElementById('surveyFeeDisplay').classList.remove('active');
+                document.getElementById('dynamicQuestions').innerHTML = '';
+                showSection('contact');
+                updateProgress(33);
+                
+                // Scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
+            
+            const callBtn = document.createElement('a');
+            callBtn.href = 'tel:+254705059964';
+            callBtn.style.cssText = `
+                background-color: var(--accent);
+                color: white;
+                border: none;
+                padding: 12px 30px;
+                border-radius: 30px;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-decoration: none;
+                display: inline-block;
+            `;
+            callBtn.innerHTML = '<i class="fas fa-phone-alt"></i> Call Us Now';
+            callBtn.onmouseover = () => callBtn.style.transform = 'translateY(-3px)';
+            callBtn.onmouseout = () => callBtn.style.transform = 'translateY(0)';
+            
+            buttonContainer.appendChild(closeBtn);
+            buttonContainer.appendChild(callBtn);
+            
+            // Assemble modal
+            modalContent.appendChild(successIcon);
+            modalContent.appendChild(messageText);
+            modalContent.appendChild(buttonContainer);
+            modalOverlay.appendChild(modalContent);
+            
+            // Add to document
+            document.body.appendChild(modalOverlay);
+            
+            // Close on overlay click
+            modalOverlay.onclick = (e) => {
+                if (e.target === modalOverlay) {
+                    modalOverlay.remove();
+                    // Reset form
+                    document.getElementById('electricalInstallationForm').reset();
+                    document.getElementById('surveyFeeDisplay').classList.remove('active');
+                    document.getElementById('dynamicQuestions').innerHTML = '';
+                    showSection('contact');
+                    updateProgress(33);
+                    
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            };
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgress(33);
+            
+            // Initialize option buttons
+            document.querySelectorAll('.option-btn.active').forEach(btn => {
+                const hiddenInput = btn.parentElement.nextElementSibling;
+                if (hiddenInput && hiddenInput.type === 'hidden') {
+                    hiddenInput.value = btn.dataset.value;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

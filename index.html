@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosanatech Solutions | Electrical, Solar & Smart Automation Experts </title>
+    <title>Solar Installation & Backup Systems Kenya | Rosanatech Solutions</title>
+    <meta name="description" content="Expert electrical & solar engineering in Kenya. Use our Rosanatech Smart-Sizer to design your perfect hybrid backup system. Smart power for a smart future.">
+    <title>Rosanatech Solutions | Smart Solar & Electrical Engineering Experts</title>
+    <meta name="description" content="Expert electrical & solar engineering for modern Kenyan homes. Use our RosanaTech Smart-Sizer to design the perfect hybrid backup system. Reliable power, engineered for safety.">
+    <meta property="og:title" content="Rosanatech Solutions | Smart Power Systems">
+    <meta property="og:description" content="Stop blackouts with engineered hybrid solar and smart electrical systems.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+
+    </head>
+<body>
+      <!-- TOP BAR WITH INTEGRATED TICKER -->
+    <div class="top-bar" id="topBar">
+        <div class="container flex">
+            <div class="top-bar-left">
+                <i class="fas fa-envelope"></i>
+                <span class="email-text">info@rosanatechsolutions.co.ke</span>
+            </div>
+            
+            <!-- TICKER AREA -->
+            <div class="promo-ticker" id="promoTicker">
+                <div class="ticker-container" id="tickerContainer">
+                    <!-- Ticker content will be inserted by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=61569216960441" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/RosanatechX" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@rosanatech_solutions" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBuYBWBFLgU7OT5BZ3z" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/rosanatech-solutions/?viewAsMember=true" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header Container -->
+    <div class="main-head" id="mainHead">
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container flex">
+                <div class="logo-section">
+                    <div class="logo-icon"><img src="assets/logo.png" alt="Rosanatech Logo"></div>
+                    <div class="logo-text">
+                        <div class="company-name">ROSANATECH</div>
+                        <div class="company-tagline">SOLUTIONS LIMITED</div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="phone-label"><i class="fas fa-phone-alt"></i> Free Call</div>
+                    <div class="phone-number">+254 705059964</div>
+                    <div class="phone-subtext">We're Just a Call Away</div>
+                </div>
+                
+                <div class="location-info">
+                    <div class="location-label"><i class="fas fa-map-marker-alt"></i> Our Location</div>
+                    <div class="location-details">Nairobi, Kenya</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container nav-container">
+                <!-- Mobile Logo Button (replaces WhatsApp button) -->
+                <button class="mobile-logo-btn" id="mobileLogoBtn">
+                    <img src="assets/logo.png" alt="Rosanatech Logo">
+                    <span class="mobile-logo-btn-text">Make it Smart</span>
+                </button>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-bolt"></i> Services</a></li>
+                    <li><a href="projects.html"><i class="fas fa-solar-panel"></i> Projects</a></li>
+                    <li><a href="blog.html"><i class="fas fa-hubspot"></i> Blog</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                
+                <!-- Desktop WhatsApp Button -->
+                <a href="design.html" 
+                   class="nav-whatsapp-btn desktop" 
+                   id="whatsappBtn"
+                   target="_self"> 
+                    <i class="fas fa-solar-panel" style="color: #FFBF00;"></i> Get My Solar Design
+                </a>
+            </div>
+        </nav>
+    </div>
+
+   <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <img src="assets/logo.png" alt="Rosanatech Logo">
+                <div class="mobile-logo-text">Make it Smart</div>
+            </div>
+            <button class="mobile-close" id="mobileClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-links">
+            <li class="active"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="services.html"><i class="fas fa-bolt"></i> Services</a></li>
+            <li><a href="projects.html"><i class="fas fa-solar-panel"></i> Projects</a></li>
+            <li><a href="blog.html"><i class="fas fa-hubspot"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        
+        <a href="design.html" class="mobile-cta inquire" >
+            <i class="fas fa-solar-panel " style="color: #FFBF00;"></i>Get My Solar Design 
+        </a>
+
+         <a href="https://wa.me/254705059964?text=Hello%20Rosanatech%20Solutions%20Limited!%20I%20would%20like%20to%20inquire%20about%20your%20electrical%20and%20solar%20services." 
+           class="mobile-cta" 
+           target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp Direct
+        </a>
+        
+        <div class="mobile-contact">
+            <h4><i class="fas fa-headset"></i> Contact Us</h4>
+            <div class="mobile-contact-info">
+                <div><i class="fas fa-envelope"></i> info@rosanatechsolutions.co.ke</div>
+                <div><i class="fas fa-phone"></i> +254 705 059 964</div>
+                <div><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <!-- END OF MOBILE MENU -->
+
+
+    <!-- Hero Carousel -->
+    <section class="hero">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1: Electrical Installations -->
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url(assets/electrical_installation.jpg);"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Smart Electrical Installations & Power Systems</h1>
+                        <div class="hero-buttons">
+                            <a href="Electrical Installation.html" class="btn btn-primary">Explore MORE</a>
+                            <a href="Electrical Installation.html#inquiry" class="btn btn-secondary">Request a Quote</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Solar Energy Systems -->
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url(assets/solar_rooftop.jpg);"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Professional Solar Engineering & Smart Energy Storage</h1>
+                        <div class="hero-buttons">
+                            <a href="Solar Systems.html" class="btn btn-primary">Explore MORE</a>
+                            <a href="Solar Systems.html#inquiry" class="btn btn-secondary">Request a Quote</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Smart Home & Business Solutions -->
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url(assets/smart_home.jpg);"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Smart Home & Business Solutions</h1>
+                        <p>Transform your space with intelligent automation systems that enhance comfort, security, and energy efficiency.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary" style="display: none;">Our Services</a>
+                            <a href="#" class="btn btn-secondary" style="display: none;">Request a Quote</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4: Maintenance & Support -->
+               <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url(assets/sitesurvey.jpg);"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Professional Solar & Electrical Maintenance</h1>
+                          <p>Keep your system at peak performance. We provide professional health checks, battery testing, and rapid technical support nationwide.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary" style="display: none;">Our Services</a>
+                            <a href="#" class="btn btn-secondary" style="display: none;">Request a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!--Why Us Section-->
+    <section class="features-section">
+    <div class="feature-box">
+      <div class="feature-icon">⚡</div>
+      <h3>Smart Electrical & Solar Services</h3>
+      <p>Delivering efficient installations, clean energy solutions, and reliable support for modern living.</p>
+    </div>
+    <div class="feature-box">
+      <div class="feature-icon">🔧</div>
+      <h3>Professional Expertise</h3>
+      <p>Our skilled team ensures top-quality service with modern electrical standards.</p>
+    </div>
+    <div class="feature-box">
+      <div class="feature-icon">🤝</div>
+      <h3>Client Commitment</h3>
+      <p>Your satisfaction is our priority, and we deliver solutions you can trust.</p>
+    </div>
+    </section>
+
+    <!-- About Section -->
+     <section class="about-section">
+        <div class="image-column">
+            <div class="technician-image">
+               <img src="assets/welcome_rosanatech.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="content-column">
+            <h3 class="small-heading">Welcome to Rosanatech Solutions</h3>
+            <h1 class="main-heading">Quality and Affordable Energy Solutions</h1>
+            <p class="description">
+                We provide innovative, safe, and affordable electrical & solar services ranging from installations to smart solutions for homes and businesses across Kenya.
+            </p>
+            
+            <h2 class="subheading">We Can Help You With</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="service-title">Electrical Installation</h3>
+                    <p class="service-description">Safe and reliable wiring and electrical setup for your home or business.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="service-title">Solar Systems</h3>
+                    <p class="service-description">Sustainable solar power solutions to cut energy costs.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title">Smart Home Solutions</h3>
+                    <p class="service-description">Automating homes with the latest smart technology.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Support & Maintenance</h3>
+                    <p class="service-description">Affordable maintainance and servicing of electrical & Solar Installations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Services Section -->
+    <section class="services-section-main">
+        <div class="section-title">
+            <h2>Our Services</h2>
+        </div>
+        
+        <div class="services-grid-service">
+            <!-- Electrical Installation Card -->
+            <div class="service-card-service">
+                <div class="image-container">
+                    <img src="assets/electrical_installation.jpg"
+                         alt="Electrical Installation" class="service-image">
+                    <div class="icon-badge">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+                <div class="card-content-service">
+                    <h3 class="service-name">Electrical Installation</h3>
+                    <p class="service-description">Professional installation of electrical systems for residential and commercial properties with safety as our top priority. We ensure code compliance and efficient energy distribution.</p>
+                    <a href="Electrical Installation.html" class="learn-more-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Solar Systems Card -->
+            <div class="service-card-service">
+                <div class="image-container">
+                    <img src="assets/solar_rooftop.jpg" 
+                         alt="Solar Systems" class="service-image">
+                    <div class="icon-badge">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                </div>
+                <div class="card-content-service">
+                    <h3 class="service-name">Solar Systems</h3>
+                    <p class="service-description">Eco-friendly solar energy solutions to reduce your carbon footprint and electricity bills. Complete solar panel installation, maintenance, and energy optimization services.</p>
+                    <a href="Solar Systems.html" class="learn-more-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Smart Home Automation Card (Hidden) -->
+            <div class="service-card-service" style="display: none;">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x220/4CAF50/FFFFFF?text=Smart+Home" 
+                         alt="Smart Home Automation" class="service-image">
+                    <div class="icon-badge">
+                        <i class="fas fa-home"></i>
+                    </div>
+                </div>
+                <div class="card-content-service">
+                    <h3 class="service-name">Smart Home Automation</h3>
+                    <p class="service-description">Transform your home with cutting-edge automation for security, comfort, and energy efficiency. Voice-controlled systems and smart device integration.</p>
+                    <a href="#" class="learn-more-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Device Repair & Maintenance Card (Hidden) -->
+            <div class="service-card-service" style="display: none;">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x220/8BC34A/FFFFFF?text=Maintenance" 
+                         alt="Support & Maintenance" class="service-image">
+                    <div class="icon-badge">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                </div>
+                <div class="card-content-service">
+                    <h3 class="service-name">Support & Maintenance</h3>
+                    <p class="service-description">Expert repair and maintenance services to keep your devices running smoothly and efficiently. 24/7 emergency support and regular maintenance packages.</p>
+                    <a href="#" class="learn-more-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Latest Projects-->
+    <section class="projects-coming-soon" id="projects" style="display: none;">
+        <div class="projects-content">
+            
+            <h2 class="projects-title">Featured Projects</h2>
+            
+            <h3 class="projects-message">Project Portfolio Coming Soon</h3>
+            
+            <p class="projects-description">
+                Our portfolio of successful electrical and solar installations will be available soon. 
+                We're compiling our completed projects to showcase quality workmanship.
+            </p>
+            
+            <div class="status-indicator">
+                <i class="fas fa-clock"></i> Projects Being Compiled
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="ros-blog-section">
+        <div class="ros-blog-header">
+            <p class="ros-blog-subtitle">Our Insights</p>
+            <h2 class="ros-blog-title">Latest from The Hub</h2>
+        </div>
+
+        <!-- Blog Grid (Empty State) -->
+        <div class="ros-blog-grid">
+            <!-- Blog Card 1 (Placeholder) -->
+            <div class="ros-blog-card">
+                <div class="ros-card-image">
+                    <img src="assets/Fault Finding & Troubleshooting.jpg" 
+                         alt="Electrical Engineering Blog" loading="lazy">
+                    <div class="ros-date-badge">COMING SOON</div>
+                </div>
+                <div class="ros-card-content">
+                    <div class="ros-post-meta">
+                        <span><i class="fas fa-user"></i> Rosanatech Team</span>
+                        <span><i class="fas fa-comment"></i> 0 Comments</span>
+                    </div>
+                    <h3 class="ros-blog-card-title">Electrical Safety Tips for Homeowners</h3>
+                    <p class="ros-blog-excerpt">Essential electrical safety guidelines every homeowner should know to protect their family and property.</p>
+                    <a href="#" class="ros-read-more">
+                        Coming Soon <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 (Placeholder) -->
+            <div class="ros-blog-card">
+                <div class="ros-card-image">
+                    <img src="assets/solar_rooftop.jpg" 
+                         alt="Solar Energy Blog" loading="lazy">
+                    <div class="ros-date-badge">COMING SOON</div>
+                </div>
+                <div class="ros-card-content">
+                    <div class="ros-post-meta">
+                        <span><i class="fas fa-user"></i> Rosanatech Team</span>
+                        <span><i class="fas fa-comment"></i> 0 Comments</span>
+                    </div>
+                    <h3 class="ros-blog-card-title">Solar Panel Maintenance Guide</h3>
+                    <p class="ros-blog-excerpt">How to properly maintain your solar panels for maximum efficiency and longevity throughout the years.</p>
+                    <a href="#" class="ros-read-more">
+                        Coming Soon <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 (Placeholder) -->
+            <div class="ros-blog-card">
+                <div class="ros-card-image">
+                    <img src="assets/smart_home.jpg" 
+                         alt="Smart Home Blog" loading="lazy">
+                    <div class="ros-date-badge">COMING SOON</div>
+                </div>
+                <div class="ros-card-content">
+                    <div class="ros-post-meta">
+                        <span><i class="fas fa-user"></i> Rosanatech Team</span>
+                        <span><i class="fas fa-comment"></i> 0 Comments</span>
+                    </div>
+                    <h3 class="ros-blog-card-title">Smart Home Automation Trends 2024</h3>
+                    <p class="ros-blog-excerpt">Latest trends in home automation and how they're changing the way we live and save energy.</p>
+                    <a href="#" class="ros-read-more">
+                        Coming Soon <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coming Soon Message 
+        <div class="ros-coming-soon">
+            <div class="ros-coming-soon-icon">
+                <i class="fas fa-blog"></i>
+            </div>
+            <h3>Blog Coming Soon!</h3>
+            <p>We're currently preparing valuable content about electrical solutions, solar energy, and smart home technology. Our blog will feature expert advice, industry insights, and practical tips to help you make informed decisions about your electrical and solar needs.</p>
+            <p>Check back soon for our first articles!</p>
+            <a href="contact.html" class="ros-read-more">
+                <i class="fas fa-envelope"></i> Subscribe for Updates
+            </a>
+        </div>-->
+    </section>
+     
+   <!-- Client Reviews Section Only -->
+    <section id="client-reviews-section">
+        <div id="reviews-section-title">
+            <h2>What Our Clients Say</h2>
+            <p>Real feedback from our satisfied customers who have experienced our services firsthand.</p>
+        </div>
+        
+        <div id="reviews-grid-container">
+            <!-- Review 1 -->
+            <div class="review-card-item">
+                <div class="review-card-header">
+                    <div class="client-avatar-img">
+                        <img src="assets/techCorp.png" alt="Nelly Abdula">
+                    </div>
+                    <div class="client-info-details">
+                        <h3>Nelly Abdula</h3>
+                        <p>Marketing Director, TechCorp</p>
+                    </div>
+                </div>
+                <div class="review-rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="review-text-content">
+                    The service exceeded my expectations. The team was professional, responsive, and delivered outstanding results. Our project was completed ahead of schedule with excellent quality.
+                </div>
+                <div class="review-date-posted">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Posted: December 15, 2025</span>
+                </div>
+            </div>
+            
+            <!-- Review 2 -->
+            <div class="review-card-item">
+                <div class="review-card-header">
+                    <div class="client-avatar-img">
+                        <img src="" alt="Mogusu Abel">
+                    </div>
+                    <div class="client-info-details">
+                        <h3>Mogusu Abel</h3>
+                        <p> Architect</p>
+                    </div>
+                </div>
+                <div class="review-rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="review-text-content">
+                    Exceptional attention to detail and commitment to quality. They understood our vision perfectly and brought it to life. The communication throughout the project was excellent.
+                </div>
+                <div class="review-date-posted">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Posted: November 28, 2025</span>
+                </div>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="review-card-item">
+                <div class="review-card-header">
+                    <div class="client-avatar-img">
+                        <img src="assets/ivy_walker.jpg" alt="Ivy Walker">
+                    </div>
+                    <div class="client-info-details">
+                        <h3>Ivy Walker</h3>
+                        <p>Photographer, Valid Studio</p>
+                    </div>
+                </div>
+                <div class="review-rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="review-text-content">
+                   Rosanatech solutions is a team dedicated to their goals on providing electrical solutions to clients with their skills and rich expertise. Personally I've engaged with them even in the simplest things like screen replacement and trust me,,,,their quick response to your needs and we'll detailed explanation is enough to know they're a team that knows what they are doing. I recommend them 100% . A well visioned team and one of the future's biggest tech company Mark that 💯
+                </div>
+                <div class="review-date-posted">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Posted: November 10, 2025</span>
+                </div>
+            </div>
+            
+            <!-- Review 4 -->
+            <div class="review-card-item">
+                <div class="review-card-header">
+                    <div class="client-avatar-img">
+                        <img src="assets/Odira_Steve.jpg" alt="Odira Steve">
+                    </div>
+                    <div class="client-info-details">
+                        <h3>Odira Steve </h3>
+                        <p>Medical Officer</p>
+                    </div>
+                </div>
+                <div class="review-rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="review-text-content">
+                    I had my home sockets repaired by Rosanatech Solutions. Although I didn't meet the full team but the services were good and fast at a pocket friendly cost. Highly recommended.
+                </div>
+                <div class="review-date-posted">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>Posted: October 5, 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Quote & FAQ Section -->
+    <section class="ros-quote-faq-section">
+        <h2 class="ros-section-title">Get a Quote & FAQs</h2>
+        
+        <div class="ros-content-wrapper">
+            <!-- Services Column -->
+            <div class="ros-services-grid">
+                <!-- Electrical Installation -->
+                <div class="ros-service-item">
+                    <div class="ros-service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="ros-service-content">
+                        <h3>Electrical Installation</h3>
+                        <p>Complete wiring solutions for homes and businesses</p>
+                        <a href="Electrical Installation.html#inquiry" class="ros-quote-btn">
+                            <i class="fas fa-file-invoice"></i> Get Quote
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Solar Systems -->
+                <div class="ros-service-item">
+                    <div class="ros-service-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <div class="ros-service-content">
+                        <h3>Solar Systems</h3>
+                        <p>Eco-friendly solar energy solutions</p>
+                        <a href="Solar Systems.html#inquiry" class="ros-quote-btn">
+                            <i class="fas fa-file-invoice"></i> Get Quote
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Maintenance & Repair (Hidden) -->
+                <div class="ros-service-item" style="display: none;">
+                    <div class="ros-service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="ros-service-content">
+                        <h3>Maintenance & Repair</h3>
+                        <p>Regular maintenance and emergency repairs</p>
+                        <a href="Maintenance.html#inquiry" class="ros-quote-btn">
+                            <i class="fas fa-file-invoice"></i> Get Quote
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Smart Home Automation (Hidden) -->
+                <div class="ros-service-item" style="display: none;">
+                    <div class="ros-service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="ros-service-content">
+                        <h3>Smart Home Automation</h3>
+                        <p>Modern home automation solutions</p>
+                        <a href="Smart Home.html#inquiry" class="ros-quote-btn">
+                            <i class="fas fa-file-invoice"></i> Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Column -->
+            <div class="ros-faqs-container">
+                <h3 class="ros-faqs-title">
+                    <i class="fas fa-question-circle"></i> Frequently Asked Questions
+                </h3>
+                
+                <div class="faq-list">
+                    <div class="ros-faq-item">
+                        <div class="ros-faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            How long does a typical solar installation take?
+                        </div>
+                        <div class="ros-faq-answer">
+                            Most residential solar installations take 2-3 days, depending on system size and complexity.
+                        </div>
+                    </div>
+                    
+                    <div class="ros-faq-item">
+                        <div class="ros-faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            Do you provide warranties for your electrical work?
+                        </div>
+                        <div class="ros-faq-answer">
+                            Yes, we provide 2-year warranties on all electrical installations and 5-year warranties on solar systems.
+                        </div>
+                    </div>
+                    
+                    <div class="ros-faq-item">
+                        <div class="ros-faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            How do I get a quote for my project?
+                        </div>
+                        <div class="ros-faq-answer">
+                            Click the quote button for your desired service, fill out our simple form, and we'll contact you within 24 hours.
+                        </div>
+                    </div>
+                    
+                    <div class="ros-faq-item">
+                        <div class="ros-faq-question">
+                            <i class="fas fa-chevron-right"></i>
+                            Do you offer emergency electrical services?
+                        </div>
+                        <div class="ros-faq-answer">
+                            Yes, we provide 24/7 emergency electrical repair services. Call us anytime for urgent assistance.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rosanatech Footer -->
+    <footer id="rosanatech-footer">
+        <div class="rtech-footer-container">
+            <div class="rtech-footer-content">
+                <div class="rtech-footer-columns">
+                    <!-- Column 1 -->
+                    <div class="rtech-footer-column">
+                        <a href="#" class="rtech-footer-logo">Rosanatech</a>
+                        <p class="rtech-company-description">
+                            Rosanatech Solutions is a premier electrical, solar, smart home, and construction company in Nairobi, Kenya—delivering reliable solutions in power systems, solar installations, building works, automation, security systems, and maintenance.
+                        </p>
+                        <div class="rtech-social-icons">
+                            <a href="https://web.facebook.com/profile.php?id=61569216960441" class="rtech-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/RosanatechX" class="rtech-social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.tiktok.com/@rosanatech_solutions" class="rtech-social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://whatsapp.com/channel/0029VbBuYBWBFLgU7OT5BZ3z" class="rtech-social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/company/rosanatech-solutions/?viewAsMember=true" class="rtech-social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="rtech-newsletter" style="display: none;">
+                            <h4>Stay Updated</h4>
+                            <div class="rtech-newsletter-form">
+                                <input type="email" class="rtech-newsletter-input" placeholder="Your email address">
+                                <button class="rtech-newsletter-button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Quick Links</h3>
+                        <ul class="rtech-footer-links">
+                            <li><a href="#"><i class="fas fa-home fa-xs"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-info-circle fa-xs"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-cogs fa-xs"></i> Services</a></li>
+                            <li><a href="#"><i class="fas fa-project-diagram fa-xs"></i> Projects</a></li>
+                            <li><a href="#"><i class="fas fa-blog fa-xs"></i> Blog / Resources</a></li>
+                            <li><a href="#"><i class="fas fa-envelope fa-xs"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Company Information</h3>
+                        <ul class="rtech-footer-links">
+                            <li><a href="#"><i class="fas fa-building fa-xs"></i> Corporate Information</a></li>
+                            <li><a href="#"><i class="fas fa-gavel fa-xs"></i> Governance & Compliance</a></li>
+                            <li><a href="#"><i class="fas fa-boxes fa-xs"></i> Company Resources</a></li>
+                            <li><a href="#"><i class="fas fa-briefcase fa-xs"></i> Corporate Affairs</a></li>
+                            <li><a href="#"><i class="fas fa-users-cog fa-xs"></i> Administration</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt fa-xs"></i> Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div class="rtech-footer-column">
+                        <h3 class="rtech-footer-heading">Contact Info</h3>
+                        <ul class="rtech-contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Nairobi, Kenya</span></li>
+                            <li><i class="fas fa-envelope"></i><span>info@rosanatechsolutions.co.ke</span></li>
+                            <li><i class="fas fa-phone"></i><span>+254 114 060 735</span></li>
+                            <li><i class="fas fa-clock"></i><span>Mon–Sat 8:00 AM – 6:00 PM</span></li>
+                            <li><i class="fas fa-phone-volume"></i><span>Emergency: +254 705 059 964</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="rtech-footer-bottom">
+                <div class="rtech-footer-bottom-content">
+                    <div class="rtech-copyright">© 2026 Rosanatech Solutions. All rights reserved.</div>
+                    <div class="rtech-developer">Made by <a href="#">PresenceLab Digital Solutions</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="rtech-back-to-top" id="rtechBackToTop" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+ 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.testimonials-track');
+            const cards = document.querySelectorAll('.testimonial-card');
+            const dots = document.querySelectorAll('.carousel-dot');
+            let currentIndex = 0;
+            let autoSlideInterval;
+            
+            // Function to update the carousel position
+            function updateCarousel() {
+                const cardWidth = cards[0].offsetWidth + 30; // card width + margin
+                track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                
+                // Update active dot
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Function to move to a specific slide
+            function goToSlide(index) {
+                currentIndex = index;
+                if (currentIndex >= cards.length) currentIndex = 0;
+                if (currentIndex < 0) currentIndex = cards.length - 1;
+                updateCarousel();
+            }
+            
+            // Function to start auto sliding
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(() => {
+                    goToSlide(currentIndex + 1);
+                }, 5000);
+            }
+            
+            // Function to stop auto sliding
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+            
+            // Add click event listeners to dots
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    const index = parseInt(this.getAttribute('data-index'));
+                    goToSlide(index);
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+            });
+            
+            // Initialize the carousel
+            updateCarousel();
+            startAutoSlide();
+            
+            // Pause auto sliding on hover
+            const container = document.querySelector('.testimonials-container');
+            container.addEventListener('mouseenter', stopAutoSlide);
+            container.addEventListener('mouseleave', startAutoSlide);
+            
+            // Handle window resize
+            window.addEventListener('resize', updateCarousel);
+        });
+
+
+
+
+
+         // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    // Toggle active class on the clicked header
+                    this.classList.toggle('active');
+                    
+                    // Get the associated content
+                    const content = this.nextElementSibling;
+                    
+                    // Toggle the content visibility
+                    if (this.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = 0;
+                    }
+                    
+                    // Close other open accordion items
+                    accordionHeaders.forEach(otherHeader => {
+                        if (otherHeader !== this && otherHeader.classList.contains('active')) {
+                            otherHeader.classList.remove('active');
+                            otherHeader.nextElementSibling.style.maxHeight = 0;
+                        }
+                    });
+                });
+            });
+            
+            // Form submission handling
+            const quoteForm = document.getElementById('quoteForm');
+            
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(this);
+                const name = formData.get('fullName');
+                
+                // In a real application, you would send this data to a server
+                // For this example, we'll just show an alert
+                alert(`Thank you ${name}! Your quote request has been received. We'll contact you shortly.`);
+                
+                // Reset the form
+                this.reset();
+            });
+        });
+    </script>
+
+     
+    <!-- Swiper JS -->
+     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper(".heroSwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+        });
+    </script>
+</body>
+</html>
